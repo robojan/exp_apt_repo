@@ -1,0 +1,9 @@
+Package: b
+Version: 1.0-1
+Section: base
+Priority: optional
+Architecture: all
+Maintainer: Test <test@example.com>
+Description: B
+  Pkg B
+

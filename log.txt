@@ -1,0 +1,5209 @@
+Request: EDSP 0.5
+Architecture: amd64
+Architectures: amd64
+Install: a:amd64 b:amd64
+Solver: solver3
+Strict-Pinning: no
+
+Package: dpkg
+Architecture: amd64
+Version: 1.21.1ubuntu2.3
+APT-ID: 36
+Essential: yes
+Multi-Arch: foreign
+Source: dpkg
+Source-Version: 1.21.1ubuntu2.3
+Priority: important
+Section: admin
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: tar (>= 1.28-1)
+Pre-Depends: libbz2-1.0, libc6 (>= 2.34), liblzma5 (>= 5.2.2), libselinux1 (>= 3.1~), libzstd1 (>= 1.4.0), zlib1g (>= 1:1.1.4)
+Suggests: apt, debsig-verify
+Breaks: libapt-pkg5.0 (<< 1.7~b), lsb-base (<< 10.2019031300)
+
+Package: libidn2-dev
+Architecture: amd64
+Version: 2.3.2-2build1
+APT-ID: 146
+Multi-Arch: same
+Source: libidn2
+Source-Version: 2.3.2-2build1
+Priority: optional
+Section: libdevel
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: libidn2-0 (= 2.3.2-2build1)
+Replaces: libidn2-0-dev (<< 2.0.3-1~)
+Breaks: libidn2-0-dev (<< 2.0.3-1~)
+Provides: libidn2-0-dev
+
+Package: lsb-release
+Architecture: all
+Version: 11.1.0ubuntu4
+APT-ID: 261
+Multi-Arch: foreign
+Source: lsb
+Source-Version: 11.1.0ubuntu4
+Priority: optional
+Section: misc
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: python3:any, distro-info-data
+Recommends: apt
+
+Package: libperl5.34
+Architecture: amd64
+Version: 5.34.0-3ubuntu1.3
+APT-ID: 196
+Multi-Arch: same
+Source: perl
+Source-Version: 5.34.0-3ubuntu1.3
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: libbz2-1.0, libc6 (>= 2.35), libcrypt1 (>= 1:4.1.0), libdb5.3, libgdbm-compat4 (>= 1.18-3), libgdbm6 (>= 1.18-3), zlib1g (>= 1:1.2.2.3), perl-modules-5.34 (>= 5.34.0-3ubuntu1.3)
+Suggests: sensible-utils
+Replaces: libarchive-tar-perl (<= 1.38-2), libcompress-raw-bzip2-perl (<< 2.101), libcompress-raw-zlib-perl (<< 2.101), libcompress-zlib-perl (<< 2.102), libdigest-md5-perl (<< 2.58), libdigest-sha-perl (<< 6.02), libencode-perl (<< 3.08), libio-compress-base-perl (<< 2.102), libio-compress-bzip2-perl (<< 2.102), libio-compress-perl (<< 2.102), libio-compress-zlib-perl (<< 2.102), libmime-base64-perl (<< 3.16), libmodule-corelist-perl (<< 2.14-2), libstorable-perl (<< 3.23), libsys-syslog-perl (<< 0.36), libthreads-perl (<< 2.26), libthreads-shared-perl (<< 1.62), libtime-hires-perl (<< 1.9767), libtime-piece-perl (<< 1.3401), perl (<< 5.22.0~), perl-base (<< 5.22.0~)
+Breaks: libcompress-raw-bzip2-perl (<< 2.101), libcompress-raw-zlib-perl (<< 2.101), libcompress-zlib-perl (<< 2.102), libdigest-md5-perl (<< 2.58), libdigest-sha-perl (<< 6.02), libencode-perl (<< 3.08), libfilter-perl (<< 1.60), libio-compress-base-perl (<< 2.102), libio-compress-bzip2-perl (<< 2.102), libio-compress-perl (<< 2.102), libio-compress-zlib-perl (<< 2.102), libmime-base64-perl (<< 3.16), libstorable-perl (<< 3.23), libsys-syslog-perl (<< 0.36), libthreads-perl (<< 2.26), libthreads-shared-perl (<< 1.62), libtime-hires-perl (<< 1.9767), libtime-piece-perl (<< 1.3401)
+
+Package: libxapian30
+Architecture: amd64
+Version: 1.4.18-4
+APT-ID: 247
+Multi-Arch: same
+Source: xapian-core
+Source-Version: 1.4.18-4
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: libc6 (>= 2.34), libgcc-s1 (>= 3.4), libstdc++6 (>= 11), libuuid1 (>= 2.16), zlib1g (>= 1:1.1.4)
+Suggests: xapian-tools
+
+Package: libkeyutils1
+Architecture: amd64
+Version: 1.6.1-2ubuntu3
+APT-ID: 152
+Multi-Arch: same
+Source: keyutils
+Source-Version: 1.6.1-2ubuntu3
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libc6 (>= 2.14)
+
+Package: libcurl4-openssl-dev
+Architecture: amd64
+Version: 7.81.0-1ubuntu1.17
+APT-ID: 107
+Multi-Arch: same
+Source: curl
+Source-Version: 7.81.0-1ubuntu1.17
+Priority: optional
+Section: libdevel
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libcurl4 (= 7.81.0-1ubuntu1.17)
+Suggests: libcurl4-doc, libidn11-dev, libkrb5-dev, libldap2-dev, librtmp-dev, libssh2-1-dev, libssl-dev (>= 1.1), pkg-config, zlib1g-dev
+Conflicts: libcurl4-gnutls-dev, libcurl4-nss-dev, libssl-dev (<< 1.1), libssl1.0-dev
+Provides: libcurl4-dev, libcurl3-openssl-dev, libcurl3-dev, libcurl-ssl-dev, libcurl-dev
+
+Package: libxtables12
+Architecture: amd64
+Version: 1.8.7-1ubuntu5.2
+APT-ID: 250
+Multi-Arch: same
+Source: iptables
+Source-Version: 1.8.7-1ubuntu5.2
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: libc6 (>= 2.34)
+Replaces: iptables (<< 1.4.16.3-3), libxtables11 (>= 1.6.0+snapshot20161117-1)
+Breaks: iptables (<< 1.4.16.3-3), libxtables11 (>= 1.6.0+snapshot20161117-1)
+
+Package: libcurl4
+Architecture: amd64
+Version: 7.81.0-1ubuntu1.17
+APT-ID: 106
+Multi-Arch: same
+Source: curl
+Source-Version: 7.81.0-1ubuntu1.17
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: libbrotli1 (>= 0.6.0), libc6 (>= 2.34), libgssapi-krb5-2 (>= 1.17), libidn2-0 (>= 0.6), libldap-2.5-0 (>= 2.5.4), libnghttp2-14 (>= 1.12.0), libpsl5 (>= 0.16.0), librtmp1 (>= 2.4+20131018.git79459a2-3~), libssh-4 (>= 0.9.0), libssl3 (>= 3.0.0~~alpha1), libzstd1 (>= 1.4.0), zlib1g (>= 1:1.1.4)
+Recommends: ca-certificates
+Conflicts: libcurl3
+Replaces: libcurl3
+
+Package: libgomp1
+Architecture: amd64
+Version: 12.3.0-1ubuntu1~22.04
+APT-ID: 138
+Multi-Arch: same
+Source: gcc-12
+Source-Version: 12.3.0-1ubuntu1~22.04
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: gcc-12-base (= 12.3.0-1ubuntu1~22.04), libc6 (>= 2.34)
+Breaks: gcc-4.3 (<< 4.3.6-1), gcc-4.4 (<< 4.4.6-4), gcc-4.5 (<< 4.5.3-2)
+
+Package: libsmartcols1
+Architecture: amd64
+Version: 2.37.2-4ubuntu3.4
+APT-ID: 219
+Multi-Arch: same
+Source: util-linux
+Source-Version: 2.37.2-4ubuntu3.4
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libc6 (>= 2.14)
+
+Package: manpages-dev
+Architecture: all
+Version: 5.10-1ubuntu1
+APT-ID: 267
+Multi-Arch: foreign
+Source: manpages
+Source-Version: 5.10-1ubuntu1
+Priority: optional
+Section: doc
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: manpages
+Suggests: man-browser
+Replaces: libattr1-dev (<< 1:2.4.47-3), libbsd-dev (<< 0.8.4-1)
+Breaks: libattr1-dev (<< 1:2.4.47-3), libbsd-dev (<< 0.8.4-1), manpages (<< 5.09-2)
+
+Package: libpam-runtime
+Architecture: all
+Version: 1.4.0-11ubuntu2.4
+APT-ID: 188
+Multi-Arch: foreign
+Source: pam
+Source-Version: 1.4.0-11ubuntu2.4
+Priority: important
+Section: admin
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: debconf (>= 0.5) | debconf-2.0, debconf (>= 1.5.19) | cdebconf, libpam-modules (>= 1.0.1-6)
+Conflicts: libpam0g-util
+Replaces: libpam0g-dev, libpam0g-util
+
+Package: coreutils
+Architecture: amd64
+Version: 8.32-4.1ubuntu1.2
+APT-ID: 22
+Essential: yes
+Multi-Arch: foreign
+Source: coreutils
+Source-Version: 8.32-4.1ubuntu1.2
+Priority: important
+Section: utils
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Pre-Depends: libacl1 (>= 2.2.23), libattr1 (>= 1:2.4.44), libc6 (>= 2.34), libgmp10 (>= 2:6.2.1+dfsg), libselinux1 (>= 3.1~)
+
+Package: libgdbm-compat4
+Architecture: amd64
+Version: 1.23-1
+APT-ID: 127
+Multi-Arch: same
+Source: gdbm
+Source-Version: 1.23-1
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: libc6 (>= 2.33), libgdbm6 (>= 1.16)
+
+Package: python3.10
+Architecture: amd64
+Version: 3.10.12-1~22.04.5
+APT-ID: 294
+Multi-Arch: allowed
+Source: python3.10
+Source-Version: 3.10.12-1~22.04.5
+Priority: optional
+Section: python
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: python3.10-minimal (= 3.10.12-1~22.04.5), libpython3.10-stdlib (= 3.10.12-1~22.04.5), media-types | mime-support
+Suggests: python3.10-venv, python3.10-doc, binutils
+Breaks: python3-all (<< 3.6.5~rc1-1), python3-dev (<< 3.6.5~rc1-1), python3-venv (<< 3.6.5-2)
+
+Package: libext2fs2
+Architecture: amd64
+Version: 1.46.5-2ubuntu1.1
+APT-ID: 119
+Multi-Arch: same
+Source: e2fsprogs
+Source-Version: 1.46.5-2ubuntu1.1
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libc6 (>= 2.34)
+Replaces: e2fslibs (<< 1.43.9-1~)
+Breaks: e2fslibs (<< 1.43.9-1~)
+Provides: e2fslibs (= 1.46.5-2ubuntu1.1)
+
+Package: libffi8
+Architecture: amd64
+Version: 3.4.2-4
+APT-ID: 120
+Multi-Arch: same
+Source: libffi
+Source-Version: 3.4.2-4
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libc6 (>= 2.27)
+Replaces: libffi8ubuntu1 (<< 3.4.2-1)
+Breaks: libffi8ubuntu1 (<< 3.4.2-1)
+Provides: libffi8ubuntu1 (= 3.4.2-4)
+
+Package: libgssapi-krb5-2
+Architecture: amd64
+Version: 1.19.2-2ubuntu0.4
+APT-ID: 142
+Multi-Arch: same
+Source: krb5
+Source-Version: 1.19.2-2ubuntu0.4
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libc6 (>= 2.33), libcom-err2 (>= 1.43.9), libk5crypto3 (>= 1.16), libkrb5-3 (= 1.19.2-2ubuntu0.4), libkrb5support0 (>= 1.15~beta1)
+Suggests: krb5-doc, krb5-user
+Breaks: moonshot-gss-eap (<= 1.0)
+
+Package: netbase
+Architecture: all
+Version: 6.3
+APT-ID: 276
+Multi-Arch: foreign
+Source: netbase
+Source-Version: 6.3
+Priority: required
+Section: admin
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Replaces: ebtables (<< 2.0.11-2)
+Breaks: ebtables (<< 2.0.11-2)
+
+Package: readline-common
+Architecture: all
+Version: 8.1.2-1
+APT-ID: 296
+Multi-Arch: foreign
+Source: readline
+Source-Version: 8.1.2-1
+Priority: optional
+Section: utils
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: dpkg (>= 1.15.4) | install-info
+Suggests: readline-doc
+Conflicts: libreadline-common, libreadline5 (<< 5.0-11)
+Replaces: libreadline-common, libreadline4 (<< 4.3-16), libreadline5 (<< 5.0-11)
+
+Package: g++-11
+Architecture: amd64
+Version: 11.4.0-1ubuntu1~22.04
+APT-ID: 43
+Source: gcc-11
+Source-Version: 11.4.0-1ubuntu1~22.04
+Priority: optional
+Section: devel
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: gcc-11-base (= 11.4.0-1ubuntu1~22.04), gcc-11 (= 11.4.0-1ubuntu1~22.04), libstdc++-11-dev (= 11.4.0-1ubuntu1~22.04), libc6 (>= 2.34), libgmp10 (>= 2:6.2.1+dfsg), libisl23 (>= 0.15), libmpc3 (>= 1.1.0), libmpfr6 (>= 3.1.3), libzstd1 (>= 1.4.0), zlib1g (>= 1:1.1.4)
+Suggests: g++-11-multilib, gcc-11-doc (>= 11)
+Provides: c++abi2-dev, c++-compiler
+
+Package: libnghttp2-14
+Architecture: amd64
+Version: 1.43.0-1ubuntu0.2
+APT-ID: 175
+Multi-Arch: same
+Source: nghttp2
+Source-Version: 1.43.0-1ubuntu0.2
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: libc6 (>= 2.17)
+
+Package: libcurl3-gnutls
+Architecture: amd64
+Version: 7.81.0-1ubuntu1.17
+APT-ID: 105
+Multi-Arch: same
+Source: curl
+Source-Version: 7.81.0-1ubuntu1.17
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: libbrotli1 (>= 0.6.0), libc6 (>= 2.34), libgnutls30 (>= 3.7.2), libgssapi-krb5-2 (>= 1.17), libidn2-0 (>= 0.6), libldap-2.5-0 (>= 2.5.4), libnettle8, libnghttp2-14 (>= 1.12.0), libpsl5 (>= 0.16.0), librtmp1 (>= 2.4+20131018.git79459a2-3~), libssh-4 (>= 0.9.0), libzstd1 (>= 1.4.0), zlib1g (>= 1:1.1.4)
+Recommends: ca-certificates
+
+Package: openssh-client
+Architecture: amd64
+Version: 1:8.9p1-3ubuntu0.10
+APT-ID: 280
+Multi-Arch: foreign
+Source: openssh
+Source-Version: 1:8.9p1-3ubuntu0.10
+Priority: standard
+Section: net
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: adduser (>= 3.10), dpkg (>= 1.7.0), passwd, libc6 (>= 2.34), libedit2 (>= 2.11-20080614-0), libfido2-1 (>= 1.8.0), libgssapi-krb5-2 (>= 1.17), libselinux1 (>= 3.1~), libssl3 (>= 3.0.2), zlib1g (>= 1:1.1.4)
+Suggests: keychain, libpam-ssh, monkeysphere, ssh-askpass
+Recommends: xauth
+Conflicts: sftp
+Replaces: openssh-sk-helper, ssh, ssh-krb5
+Breaks: openssh-sk-helper
+Provides: ssh-client, rsh-client
+
+Package: libonig5
+Architecture: amd64
+Version: 6.9.7.1-2build1
+APT-ID: 182
+Multi-Arch: same
+Source: libonig
+Source-Version: 6.9.7.1-2build1
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: libc6 (>= 2.14)
+
+Package: gcc-11
+Architecture: amd64
+Version: 11.4.0-1ubuntu1~22.04
+APT-ID: 45
+Source: gcc-11
+Source-Version: 11.4.0-1ubuntu1~22.04
+Priority: optional
+Section: devel
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: cpp-11 (= 11.4.0-1ubuntu1~22.04), gcc-11-base (= 11.4.0-1ubuntu1~22.04), libcc1-0 (>= 11.4.0-1ubuntu1~22.04), binutils (>= 2.38), libgcc-11-dev (= 11.4.0-1ubuntu1~22.04), libc6 (>= 2.34), libgcc-s1 (>= 3.0), libgmp10 (>= 2:6.2.1+dfsg), libisl23 (>= 0.15), libmpc3 (>= 1.1.0), libmpfr6 (>= 3.1.3), libstdc++6 (>= 5), libzstd1 (>= 1.4.0), zlib1g (>= 1:1.1.4)
+Suggests: gcc-11-multilib, gcc-11-doc (>= 11), gcc-11-locales (>= 11)
+Recommends: libc6-dev (>= 2.13-0ubuntu6)
+Replaces: cpp-11 (<< 7.1.1-8)
+Provides: c-compiler
+
+Package: libsgmls-perl
+Architecture: all
+Version: 1.03ii-36
+APT-ID: 218
+Source: libsgmls-perl
+Source-Version: 1.03ii-36
+Priority: optional
+Section: perl
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: perl
+Suggests: sgmlspl, sgmls-doc, opensp | sp
+
+Package: libaudit-common
+Architecture: all
+Version: 1:3.0.7-1build1
+APT-ID: 80
+Multi-Arch: foreign
+Source: audit
+Source-Version: 1:3.0.7-1build1
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+
+Package: build-essential
+Architecture: amd64
+Version: 12.9ubuntu3
+APT-ID: 17
+Source: build-essential
+Source-Version: 12.9ubuntu3
+Priority: optional
+Section: devel
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libc6-dev | libc-dev, gcc (>= 4:10.2), g++ (>= 4:10.2), make, dpkg-dev (>= 1.17.11)
+
+Package: libnl-3-200
+Architecture: amd64
+Version: 3.5.0-0.1
+APT-ID: 176
+Multi-Arch: same
+Source: libnl3
+Source-Version: 3.5.0-0.1
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: libc6 (>= 2.34)
+
+Package: libctf-nobfd0
+Architecture: amd64
+Version: 2.38-4ubuntu2.6
+APT-ID: 103
+Multi-Arch: same
+Source: binutils
+Source-Version: 2.38-4ubuntu2.6
+Priority: optional
+Section: devel
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: libc6 (>= 2.14), zlib1g (>= 1:1.2.0)
+Replaces: libbinutils (<< 2.33.50.20191128-1~)
+Breaks: libbinutils (<< 2.33.50.20191128-1~)
+
+Package: libnl-genl-3-200
+Architecture: amd64
+Version: 3.5.0-0.1
+APT-ID: 177
+Multi-Arch: same
+Source: libnl3
+Source-Version: 3.5.0-0.1
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: libnl-3-200 (= 3.5.0-0.1), libc6 (>= 2.4)
+
+Package: apt
+Architecture: amd64
+Version: 2.4.12
+APT-ID: 5
+Essential: yes
+Source: apt
+Source-Version: 2.4.12
+Priority: required
+Section: admin
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: adduser, gpgv | gpgv2 | gpgv1, libapt-pkg6.0 (>= 2.4.12), ubuntu-keyring, libc6 (>= 2.34), libgcc-s1 (>= 3.3.1), libgnutls30 (>= 3.7.0), libseccomp2 (>= 2.4.2), libstdc++6 (>= 11), libsystemd0
+Suggests: apt-doc, aptitude | synaptic | wajig, dpkg-dev (>= 1.17.2), gnupg | gnupg2 | gnupg1, powermgmt-base
+Recommends: ca-certificates
+Replaces: apt-transport-https (<< 1.5~alpha4~), apt-utils (<< 1.3~exp2~)
+Breaks: apt-transport-https (<< 1.5~alpha4~), apt-utils (<< 1.3~exp2~), aptitude (<< 0.8.10)
+Provides: apt-transport-https (= 2.4.12)
+
+Package: libssh-4
+Architecture: amd64
+Version: 0.9.6-2ubuntu0.22.04.3
+APT-ID: 223
+Multi-Arch: same
+Source: libssh
+Source-Version: 0.9.6-2ubuntu0.22.04.3
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: libc6 (>= 2.33), libgssapi-krb5-2 (>= 1.17), libssl3 (>= 3.0.0~~alpha1), zlib1g (>= 1:1.1.4)
+Breaks: remmina (<< 1.2.31.2+dfsg-1+), remmina-plugin-nx (<< 1.2.31.2+dfsg-1+), x2goclient (<< 4.1.2.1-1+)
+
+Package: libtsan0
+Architecture: amd64
+Version: 11.4.0-1ubuntu1~22.04
+APT-ID: 237
+Multi-Arch: same
+Source: gcc-11
+Source-Version: 11.4.0-1ubuntu1~22.04
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: gcc-11-base (= 11.4.0-1ubuntu1~22.04), libc6 (>= 2.34), libgcc-s1
+
+Package: cpp
+Architecture: amd64
+Version: 4:11.2.0-1ubuntu1
+APT-ID: 23
+Multi-Arch: allowed
+Source: gcc-defaults
+Source-Version: 1.193ubuntu1
+Priority: optional
+Section: interpreters
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: cpp-11 (>= 11.2.0-1~)
+Suggests: cpp-doc
+Conflicts: cpp-doc (<< 1:2.95.3)
+
+Package: g++
+Architecture: amd64
+Version: 4:11.2.0-1ubuntu1
+APT-ID: 42
+Source: gcc-defaults
+Source-Version: 1.193ubuntu1
+Priority: optional
+Section: devel
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: cpp (= 4:11.2.0-1ubuntu1), gcc (= 4:11.2.0-1ubuntu1), g++-11 (>= 11.2.0-1~), gcc-11 (>= 11.2.0-1~)
+Suggests: g++-multilib
+Provides: g++-x86-64-linux-gnu (= 4:11.2.0-1ubuntu1), c++-compiler
+
+Package: libnettle8
+Architecture: amd64
+Version: 3.7.3-1build2
+APT-ID: 174
+Multi-Arch: same
+Source: nettle
+Source-Version: 3.7.3-1build2
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libc6 (>= 2.17)
+
+Package: dialog
+Architecture: amd64
+Version: 1.3-20211214-1
+APT-ID: 30
+Multi-Arch: foreign
+Source: dialog
+Source-Version: 1.3-20211214-1
+Priority: optional
+Section: misc
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libc6 (>= 2.34), libncursesw6 (>= 6), libtinfo6 (>= 6), debianutils (>= 1.6)
+Provides: libdialog-dev
+
+Package: gcc
+Architecture: amd64
+Version: 4:11.2.0-1ubuntu1
+APT-ID: 44
+Source: gcc-defaults
+Source-Version: 1.193ubuntu1
+Priority: optional
+Section: devel
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: cpp (= 4:11.2.0-1ubuntu1), gcc-11 (>= 11.2.0-1~)
+Suggests: gcc-multilib, make, manpages-dev, autoconf, automake, libtool, flex, bison, gdb, gcc-doc
+Recommends: libc6-dev | libc-dev
+Conflicts: gcc-doc (<< 1:2.95.3)
+Provides: gcc-x86-64-linux-gnu (= 4:11.2.0-1ubuntu1), c-compiler
+
+Package: git
+Architecture: amd64
+Version: 1:2.34.1-1ubuntu1.11
+APT-ID: 50
+Multi-Arch: foreign
+Source: git
+Source-Version: 1:2.34.1-1ubuntu1.11
+Priority: optional
+Section: vcs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libc6 (>= 2.34), libcurl3-gnutls (>= 7.56.1), libexpat1 (>= 2.0.1), libpcre2-8-0 (>= 10.34), zlib1g (>= 1:1.2.0), perl, liberror-perl, git-man (>> 1:2.34.1), git-man (<< 1:2.34.1-.)
+Suggests: gettext-base, git-daemon-run | git-daemon-sysvinit, git-doc, git-email, git-gui, gitk, gitweb, git-cvs, git-mediawiki, git-svn
+Recommends: ca-certificates, patch, less, ssh-client
+Breaks: bash-completion (<< 1:1.90-1), cogito (<= 0.18.2+), dgit (<< 5.1~), git-buildpackage (<< 0.6.5), git-el (<< 1:2.32.0~rc2-1~), gitosis (<< 0.2+20090917-7), gitpkg (<< 0.15), guilt (<< 0.33), openssh-client (<< 1:6.8), stgit (<< 0.15), stgit-contrib (<< 0.15)
+Provides: git-core, git-completion
+
+Package: libacl1
+Architecture: amd64
+Version: 2.3.1-1
+APT-ID: 73
+Multi-Arch: same
+Source: acl
+Source-Version: 2.3.1-1
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libc6 (>= 2.33)
+
+Package: gpg
+Architecture: amd64
+Version: 2.2.27-3ubuntu2.1
+APT-ID: 57
+Multi-Arch: foreign
+Source: gnupg2
+Source-Version: 2.2.27-3ubuntu2.1
+Priority: optional
+Section: utils
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: gpgconf (= 2.2.27-3ubuntu2.1), libassuan0 (>= 2.5.0), libbz2-1.0, libc6 (>= 2.34), libgcrypt20 (>= 1.9.0), libgpg-error0 (>= 1.42), libreadline8 (>= 6.0), libsqlite3-0 (>= 3.7.15), zlib1g (>= 1:1.1.4)
+Recommends: gnupg (= 2.2.27-3ubuntu2.1)
+Replaces: gnupg (<< 2.1.21-4)
+Breaks: gnupg (<< 2.1.21-4)
+
+Package: perl
+Architecture: amd64
+Version: 5.34.0-3ubuntu1.3
+APT-ID: 284
+Multi-Arch: allowed
+Source: perl
+Source-Version: 5.34.0-3ubuntu1.3
+Priority: standard
+Section: perl
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: perl-base (= 5.34.0-3ubuntu1.3), perl-modules-5.34 (>= 5.34.0-3ubuntu1.3), libperl5.34 (= 5.34.0-3ubuntu1.3)
+Pre-Depends: dpkg (>= 1.17.17)
+Suggests: perl-doc, libterm-readline-gnu-perl | libterm-readline-perl-perl, make, libtap-harness-archive-perl
+Recommends: netbase
+Conflicts: libjson-pp-perl (<< 2.27200-2)
+Replaces: perl-base (<< 5.34.0-2), perl-modules (<< 5.22.0~)
+Breaks: apt-show-versions (<< 0.22.10), libdist-inkt-perl (<< 0.024-5), libmarc-charset-perl (<< 1.35-3), libperl-dev (<< 5.24.0~), perl-doc (<< 5.34.0-1), perl-modules-5.22, perl-modules-5.24, perl-modules-5.26 (<< 5.26.2-5)
+Provides: podlators-perl (= 4.14), libversion-requirements-perl, libversion-perl (= 1:0.9928), libunicode-collate-perl (= 1.29), libtime-piece-perl (= 1.3401), libtime-local-perl (= 1.3000), libtime-hires-perl (= 1.9767), libthreads-shared-perl (= 1.62), libthreads-perl (= 2.26), libthread-queue-perl (= 3.14), libtest-use-ok-perl (= 1.302183), libtest-tester-perl (= 1.302183), libtest-simple-perl (= 1.302183), libtest-harness-perl (= 3.43), libsys-syslog-perl (= 0.36), libstorable-perl (= 3.23), libpod-simple-perl (= 3.42), libpod-escapes-perl (= 1.07), libperl-ostype-perl (= 1.010), libparse-cpan-meta-perl (= 2.150010), libparent-perl (= 0.238), libparams-check-perl (= 0.38), libnet-ping-perl (= 2.74), libnet-perl (= 1:3.13), libmodule-metadata-perl (= 1.000037), libmodule-load-perl (= 0.36), libmodule-load-conditional-perl (= 0.74), libmodule-corelist-perl (= 5.20210520), libmime-base64-perl (= 3.16), libmath-complex-perl (= 1.5902), libmath-bigint-perl (= 1.999818), liblocale-maketext-simple-perl (= 0.21.01), liblocale-maketext-perl (= 1.29), libjson-pp-perl (= 4.06000), libio-zlib-perl (= 1.11), libio-compress-zlib-perl (= 2.102), libio-compress-perl (= 2.102), libio-compress-bzip2-perl (= 2.102), libio-compress-base-perl (= 2.102), libi18n-langtags-perl (= 0.45), libhttp-tiny-perl (= 0.076), libfile-spec-perl (= 3.8000), libextutils-parsexs-perl (= 3.430000), libextutils-install-perl (= 2.20), libextutils-command-perl (= 7.62), libextutils-cbuilder-perl (= 0.280236), libexperimental-perl (= 0.024), libencode-perl (= 3.08), libdigest-sha-perl (= 6.02), libdigest-perl (= 1.19), libdigest-md5-perl (= 2.58), libcpan-meta-yaml-perl (= 0.018), libcpan-meta-requirements-perl (= 2.140), libcpan-meta-perl (= 2.150010), libcompress-zlib-perl (= 2.102), libcompress-raw-zlib-perl (= 2.101), libcompress-raw-bzip2-perl (= 2.101), libautodie-perl (= 2.34), libattribute-handlers-perl (= 1.01), libarchive-tar-perl (= 2.38), libansicolor-perl (= 5.01)
+
+Package: libtinfo6
+Architecture: amd64
+Version: 6.3-2ubuntu0.1
+APT-ID: 233
+Multi-Arch: same
+Source: ncurses
+Source-Version: 6.3-2ubuntu0.1
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libc6 (>= 2.33)
+
+Package: libtirpc-common
+Architecture: all
+Version: 1.3.2-2ubuntu0.1
+APT-ID: 234
+Multi-Arch: foreign
+Source: libtirpc
+Source-Version: 1.3.2-2ubuntu0.1
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Replaces: libtirpc1, libtirpc3 (<< 1.1.4-0.1~)
+Breaks: libtirpc1, libtirpc3 (<< 1.1.4-0.1~)
+
+Package: tzdata
+Architecture: all
+Version: 2024a-0ubuntu0.22.04.1
+APT-ID: 310
+Multi-Arch: foreign
+Source: tzdata
+Source-Version: 2024a-0ubuntu0.22.04.1
+Priority: important
+Section: localization
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: debconf (>= 0.5) | debconf-2.0
+Provides: tzdata-bookworm
+
+Package: zsh-common
+Architecture: all
+Version: 5.8.1-1
+APT-ID: 329
+Multi-Arch: foreign
+Source: zsh
+Source-Version: 5.8.1-1
+Priority: optional
+Section: shells
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Suggests: zsh-doc
+Recommends: zsh
+Replaces: zsh (<= 5.0.2-1), zsh-doc (<= 5.8-7~)
+Breaks: zsh-doc (<= 5.8-7~)
+
+Package: libunwind8
+Architecture: amd64
+Version: 1.3.2-2build2.1
+APT-ID: 244
+Multi-Arch: same
+Source: libunwind
+Source-Version: 1.3.2-2build2.1
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: libc6 (>= 2.34), liblzma5 (>= 5.1.1alpha+20110809)
+Conflicts: libunwind1-dev
+Replaces: libgcc1 (<< 1:4.0.0-2)
+
+Package: libpcre3
+Architecture: amd64
+Version: 2:8.39-13ubuntu0.22.04.1
+APT-ID: 195
+Multi-Arch: same
+Source: pcre3
+Source-Version: 2:8.39-13ubuntu0.22.04.1
+Priority: required
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libc6 (>= 2.14)
+Conflicts: libpcre3-dev (<= 4.3-3)
+Breaks: approx (<< 4.4-1~), cduce (<< 0.5.3-2~), cmigrep (<< 1.5-7~), galax (<< 1.1-7~), libpcre-ocaml (<< 6.0.1~), liquidsoap (<< 0.9.2-3~), ocsigen (<< 1.3.3-1~)
+
+Package: libunistring2
+Architecture: amd64
+Version: 1.0-1
+APT-ID: 243
+Multi-Arch: same
+Source: libunistring
+Source-Version: 1.0-1
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libc6 (>= 2.34)
+
+Package: libidn2-0
+Architecture: amd64
+Version: 2.3.2-2build1
+APT-ID: 145
+Multi-Arch: same
+Source: libidn2
+Source-Version: 2.3.2-2build1
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libc6 (>= 2.14), libunistring2 (>= 0.9.7)
+
+Package: libtasn1-6
+Architecture: amd64
+Version: 4.18.0-4build1
+APT-ID: 230
+Multi-Arch: same
+Source: libtasn1-6
+Source-Version: 4.18.0-4build1
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libc6 (>= 2.14)
+
+Package: python3-minimal
+Architecture: amd64
+Version: 3.10.6-1~22.04
+APT-ID: 293
+Multi-Arch: allowed
+Source: python3-defaults
+Source-Version: 3.10.6-1~22.04
+Priority: optional
+Section: python
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: dpkg (>= 1.13.20)
+Pre-Depends: python3.10-minimal (>= 3.10.6-1~)
+
+Package: triehash
+Architecture: all
+Version: 0.3-3
+APT-ID: 309
+Multi-Arch: foreign
+Source: triehash
+Source-Version: 0.3-3
+Priority: optional
+Section: devel
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: perl:any
+
+Package: sgml-base
+Architecture: all
+Version: 1.30
+APT-ID: 301
+Multi-Arch: foreign
+Source: sgml-base
+Source-Version: 1.30
+Priority: optional
+Section: text
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Pre-Depends: dpkg (>= 1.16.4)
+Suggests: sgml-base-doc
+
+Package: libbz2-dev
+Architecture: amd64
+Version: 1.0.8-5build1
+APT-ID: 88
+Multi-Arch: same
+Source: bzip2
+Source-Version: 1.0.8-5build1
+Priority: optional
+Section: libdevel
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libbz2-1.0 (= 1.0.8-5build1), libc6-dev | libc-dev
+Recommends: bzip2-doc
+Replaces: bzip2 (<< 0.9.5d-3)
+
+Package: po4a
+Architecture: all
+Version: 0.66-1
+APT-ID: 289
+Multi-Arch: foreign
+Source: po4a
+Source-Version: 0.66-1
+Priority: optional
+Section: text
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: gettext, libpod-parser-perl (>= 1.63), libsgmls-perl, libyaml-tiny-perl, opensp, perl:any
+Recommends: liblocale-gettext-perl, libterm-readkey-perl, libtext-wrapi18n-perl, libunicode-linebreak-perl
+
+Package: libpod-parser-perl
+Architecture: all
+Version: 1.63-2
+APT-ID: 198
+Source: libpod-parser-perl
+Source-Version: 1.63-2
+Priority: optional
+Section: perl
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: perl:any
+
+Package: libmpdec3
+Architecture: amd64
+Version: 2.5.1-2build2
+APT-ID: 170
+Multi-Arch: same
+Source: mpdecimal
+Source-Version: 2.5.1-2build2
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: libc6 (>= 2.32), libgcc-s1 (>= 3.3.1), libstdc++6 (>= 5.2)
+Breaks: libpython3.8-stdlib (<< 2.8.5-2)
+
+Package: libselinux1
+Architecture: amd64
+Version: 3.3-1build2
+APT-ID: 214
+Multi-Arch: same
+Source: libselinux
+Source-Version: 3.3-1build2
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libc6 (>= 2.34), libpcre2-8-0 (>= 10.22)
+
+Package: libarchive13
+Architecture: amd64
+Version: 3.6.0-1ubuntu1.1
+APT-ID: 75
+Multi-Arch: same
+Source: libarchive
+Source-Version: 3.6.0-1ubuntu1.1
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: libacl1 (>= 2.2.23), libbz2-1.0, libc6 (>= 2.33), liblz4-1 (>= 0.0~r130), liblzma5 (>= 5.2.2), libnettle8, libxml2 (>= 2.7.4), libzstd1 (>= 1.4.0), zlib1g (>= 1:1.1.4)
+Suggests: lrzip
+
+Package: liblzma5
+Architecture: amd64
+Version: 5.2.5-2ubuntu1
+APT-ID: 165
+Multi-Arch: same
+Source: xz-utils
+Source-Version: 5.2.5-2ubuntu1
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libc6 (>= 2.34)
+Breaks: liblzma2 (<< 5.1.1alpha+20110809-3~)
+
+Package: sed
+Architecture: amd64
+Version: 4.8-1ubuntu2
+APT-ID: 299
+Essential: yes
+Multi-Arch: foreign
+Source: sed
+Source-Version: 4.8-1ubuntu2
+Priority: important
+Section: utils
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Pre-Depends: libacl1 (>= 2.2.23), libc6 (>= 2.34), libselinux1 (>= 3.1~)
+
+Package: lsb-base
+Architecture: all
+Version: 11.1.0ubuntu4
+APT-ID: 260
+Multi-Arch: foreign
+Source: lsb
+Source-Version: 11.1.0ubuntu4
+Priority: important
+Section: misc
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+
+Package: tar
+Architecture: amd64
+Version: 1.34+dfsg-1ubuntu0.1.22.04.2
+APT-ID: 305
+Essential: yes
+Multi-Arch: foreign
+Source: tar
+Source-Version: 1.34+dfsg-1ubuntu0.1.22.04.2
+Priority: important
+Section: utils
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Pre-Depends: libacl1 (>= 2.2.23), libc6 (>= 2.34), libselinux1 (>= 3.1~)
+Suggests: bzip2, ncompress, xz-utils, tar-scripts, tar-doc
+Conflicts: cpio (<= 2.4.2-38)
+Replaces: cpio (<< 2.4.2-39)
+Breaks: dpkg-dev (<< 1.14.26)
+
+Package: xsltproc
+Architecture: amd64
+Version: 1.1.34-4ubuntu0.22.04.1
+APT-ID: 322
+Multi-Arch: foreign
+Source: libxslt
+Source-Version: 1.1.34-4ubuntu0.22.04.1
+Priority: optional
+Section: text
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libc6 (>= 2.34), libxml2 (>= 2.7.4), libxslt1.1 (>= 1.1.27)
+
+Package: w3m
+Architecture: amd64
+Version: 0.5.3+git20210102-6ubuntu0.2
+APT-ID: 319
+Multi-Arch: foreign
+Source: w3m
+Source-Version: 0.5.3+git20210102-6ubuntu0.2
+Priority: optional
+Section: web
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libc6 (>= 2.34), libgc1 (>= 1:7.2d), libgpm2 (>= 1.20.7), libssl3 (>= 3.0.0~~alpha1), libtinfo6 (>= 6), zlib1g (>= 1:1.1.4)
+Suggests: cmigemo, dict, dict-wn, dictd, libsixel-bin, man-db, mime-support, sensible-utils, w3m-el, w3m-img, wget | curl, xdg-utils, xsel
+Recommends: ca-certificates, bzip2
+Conflicts: w3m-ssl
+Replaces: w3m-ssl, w3mmee
+Provides: www-browser
+
+Package: libcap2-bin
+Architecture: amd64
+Version: 1:2.44-1ubuntu0.22.04.1
+APT-ID: 95
+Multi-Arch: foreign
+Source: libcap2
+Source-Version: 1:2.44-1ubuntu0.22.04.1
+Priority: required
+Section: utils
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: libc6 (>= 2.34), libcap2 (>= 1:2.33)
+Recommends: libpam-cap
+Replaces: libcap-bin
+Breaks: libcap-bin
+
+Package: vim
+Architecture: amd64
+Version: 2:8.2.3995-1ubuntu2.17
+APT-ID: 315
+Source: vim
+Source-Version: 2:8.2.3995-1ubuntu2.17
+Priority: optional
+Section: editors
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: vim-common (= 2:8.2.3995-1ubuntu2.17), vim-runtime (= 2:8.2.3995-1ubuntu2.17), libacl1 (>= 2.2.23), libc6 (>= 2.34), libgpm2 (>= 1.20.7), libpython3.10 (>= 3.10.0), libselinux1 (>= 3.1~), libsodium23 (>= 1.0.14), libtinfo6 (>= 6)
+Suggests: ctags, vim-doc, vim-scripts
+Provides: editor
+
+Package: base-passwd
+Architecture: amd64
+Version: 3.5.52build1
+APT-ID: 9
+Essential: yes
+Multi-Arch: foreign
+Source: base-passwd
+Source-Version: 3.5.52build1
+Priority: important
+Section: admin
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libc6 (>= 2.34), libdebconfclient0 (>= 0.145)
+Recommends: debconf (>= 0.5) | debconf-2.0
+Replaces: base
+
+Package: libsasl2-2
+Architecture: amd64
+Version: 2.1.27+dfsg2-3ubuntu1.2
+APT-ID: 210
+Multi-Arch: same
+Source: cyrus-sasl2
+Source-Version: 2.1.27+dfsg2-3ubuntu1.2
+Priority: standard
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: libsasl2-modules-db (>= 2.1.27+dfsg2-3ubuntu1.2), libc6 (>= 2.34)
+Recommends: libsasl2-modules (>= 2.1.27+dfsg2-3ubuntu1.2)
+Replaces: libsasl2
+Breaks: postfix (<= 2.8.3-1), slapd (<= 2.4.25-3)
+
+Package: xxd
+Architecture: amd64
+Version: 2:8.2.3995-1ubuntu2.17
+APT-ID: 323
+Multi-Arch: foreign
+Source: vim
+Source-Version: 2:8.2.3995-1ubuntu2.17
+Priority: optional
+Section: editors
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: libc6 (>= 2.34)
+Replaces: vim-common (<< 2:7.4.2347-1~)
+Breaks: vim-common (<< 2:7.4.2347-1~)
+
+Package: libgnutls28-dev
+Architecture: amd64
+Version: 3.7.3-4ubuntu1.5
+APT-ID: 135
+Multi-Arch: same
+Source: gnutls28
+Source-Version: 3.7.3-4ubuntu1.5
+Priority: optional
+Section: libdevel
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libc6-dev | libc-dev, libgnutls-dane0 (= 3.7.3-4ubuntu1.5), libgnutls-openssl27 (= 3.7.3-4ubuntu1.5), libgnutls30 (= 3.7.3-4ubuntu1.5), libgnutlsxx28 (= 3.7.3-4ubuntu1.5), libidn2-dev, libp11-kit-dev (>= 0.23.10), libtasn1-6-dev, nettle-dev (>= 3.6)
+Suggests: gnutls-bin, gnutls-doc
+Conflicts: gnutls-dev
+Replaces: gnutls-dev
+Provides: libgnutls-openssl-dev, gnutls-dev
+
+Package: libexpat1
+Architecture: amd64
+Version: 2.4.7-1ubuntu0.3
+APT-ID: 117
+Multi-Arch: same
+Source: expat
+Source-Version: 2.4.7-1ubuntu0.3
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: libc6 (>= 2.25)
+
+Package: libdb5.3
+Architecture: amd64
+Version: 5.3.28+dfsg1-0.8ubuntu3
+APT-ID: 109
+Multi-Arch: same
+Source: db5.3
+Source-Version: 5.3.28+dfsg1-0.8ubuntu3
+Priority: standard
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libc6 (>= 2.34)
+
+Package: zip
+Architecture: amd64
+Version: 3.0-12build2
+APT-ID: 325
+Multi-Arch: foreign
+Source: zip
+Source-Version: 3.0-12build2
+Priority: optional
+Section: utils
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libbz2-1.0, libc6 (>= 2.34)
+Recommends: unzip
+
+Package: libbinutils
+Architecture: amd64
+Version: 2.38-4ubuntu2.6
+APT-ID: 82
+Multi-Arch: same
+Source: binutils
+Source-Version: 2.38-4ubuntu2.6
+Priority: optional
+Section: devel
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: libc6 (>= 2.34), zlib1g (>= 1:1.2.0), binutils-common (= 2.38-4ubuntu2.6)
+Replaces: binutils (<< 2.29-6)
+Breaks: binutils (<< 2.29-6)
+
+Package: zsh
+Architecture: amd64
+Version: 5.8.1-1
+APT-ID: 328
+Source: zsh
+Source-Version: 5.8.1-1
+Priority: optional
+Section: shells
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: zsh-common (= 5.8.1-1), libc6 (>= 2.34), libcap2 (>= 1:2.10), libtinfo6 (>= 6)
+Suggests: zsh-doc
+Recommends: libc6 (>= 2.35), libgdbm6 (>= 1.16), libncursesw6 (>= 6), libpcre3
+
+Package: libp11-kit0
+Architecture: amd64
+Version: 0.24.0-6build1
+APT-ID: 185
+Multi-Arch: same
+Source: p11-kit
+Source-Version: 0.24.0-6build1
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libc6 (>= 2.34), libffi8 (>= 3.4)
+Breaks: opencryptoki (<= 3.6.1+dfsg-1)
+
+Package: libpython3.10-minimal
+Architecture: amd64
+Version: 3.10.12-1~22.04.5
+APT-ID: 204
+Multi-Arch: same
+Source: python3.10
+Source-Version: 3.10.12-1~22.04.5
+Priority: optional
+Section: python
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: libc6 (>= 2.14), libssl3 (>= 3.0.0~~alpha1)
+Recommends: libpython3.10-stdlib
+Conflicts: binfmt-support (<< 1.1.2)
+
+Package: libapt-pkg6.0
+Architecture: amd64
+Version: 2.4.12
+APT-ID: 74
+Multi-Arch: same
+Source: apt
+Source-Version: 2.4.12
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libbz2-1.0, libc6 (>= 2.34), libgcc-s1 (>= 3.3.1), libgcrypt20 (>= 1.9.0), liblz4-1 (>= 0.0~r127), liblzma5 (>= 5.1.1alpha+20120614), libstdc++6 (>= 11), libsystemd0 (>= 221), libudev1 (>= 183), libxxhash0 (>= 0.7.1), libzstd1 (>= 1.4.0), zlib1g (>= 1:1.2.2.3)
+Recommends: apt (>= 2.4.12)
+Breaks: appstream (<< 0.9.0-3~), apt (<< 1.6~), aptitude (<< 0.8.9), dpkg (<< 1.20.8), libapt-inst1.5 (<< 0.9.9~)
+Provides: libapt-pkg (= 2.4.12)
+
+Package: libgmpxx4ldbl
+Architecture: amd64
+Version: 2:6.2.1+dfsg-3ubuntu1
+APT-ID: 132
+Multi-Arch: same
+Source: gmp
+Source-Version: 2:6.2.1+dfsg-3ubuntu1
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: libc6 (>= 2.4), libgcc-s1 (>= 3.3.1), libgmp10 (>= 2:6.2.1+dfsg), libstdc++6 (>= 5.2)
+Conflicts: libgmp3, libgmpxx4
+Replaces: libgmp3
+
+Package: libdb-dev
+Architecture: amd64
+Version: 1:5.3.21~exp1ubuntu4
+APT-ID: 108
+Multi-Arch: same
+Source: db-defaults
+Source-Version: 1:5.3.21~exp1ubuntu4
+Priority: extra
+Section: libdevel
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libdb5.3-dev
+Conflicts: libdb4.6-dev, libdb4.7-dev, libdb4.8-dev, libdb5.1-dev
+
+Package: patch
+Architecture: amd64
+Version: 2.7.6-7build2
+APT-ID: 283
+Multi-Arch: foreign
+Source: patch
+Source-Version: 2.7.6-7build2
+Priority: optional
+Section: vcs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: libc6 (>= 2.34)
+Suggests: ed, diffutils-doc
+
+Package: libfido2-1
+Architecture: amd64
+Version: 1.10.0-1
+APT-ID: 121
+Multi-Arch: same
+Source: libfido2
+Source-Version: 1.10.0-1
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: libc6 (>= 2.33), libcbor0.8 (>= 0.5.0), libssl3 (>= 3.0.0~~alpha1), libudev1 (>= 183), zlib1g (>= 1:1.2.0)
+
+Package: libxxhash-dev
+Architecture: amd64
+Version: 0.8.1-1
+APT-ID: 251
+Multi-Arch: same
+Source: xxhash
+Source-Version: 0.8.1-1
+Priority: optional
+Section: libdevel
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libxxhash0 (= 0.8.1-1)
+
+Package: libpython3.10-stdlib
+Architecture: amd64
+Version: 3.10.12-1~22.04.5
+APT-ID: 205
+Multi-Arch: same
+Source: python3.10
+Source-Version: 3.10.12-1~22.04.5
+Priority: optional
+Section: python
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: libpython3.10-minimal (= 3.10.12-1~22.04.5), media-types | mime-support, libbz2-1.0, libc6 (>= 2.34), libcrypt1 (>= 1:4.1.0), libdb5.3, libffi8 (>= 3.4), liblzma5 (>= 5.1.1alpha+20120614), libmpdec3, libncursesw6 (>= 6.1), libnsl2 (>= 1.0), libreadline8 (>= 7.0~beta), libsqlite3-0 (>= 3.14.0), libtinfo6 (>= 6), libtirpc3 (>= 1.0.2), libuuid1 (>= 2.20.1)
+Replaces: python3-gdbm (<< 3.9.9-1~)
+Breaks: python3-gdbm (<< 3.9.9-1~)
+
+Package: librtmp1
+Architecture: amd64
+Version: 2.4+20151223.gitfa8646d.1-2build4
+APT-ID: 209
+Multi-Arch: same
+Source: rtmpdump
+Source-Version: 2.4+20151223.gitfa8646d.1-2build4
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: libc6 (>= 2.14), libgmp10 (>= 2:6.2.1+dfsg), libgnutls30 (>= 3.7.2), libhogweed6, libnettle8, zlib1g (>= 1:1.1.4)
+
+Package: debconf
+Architecture: all
+Version: 1.5.79ubuntu1
+APT-ID: 27
+Multi-Arch: foreign
+Source: debconf
+Source-Version: 1.5.79ubuntu1
+Priority: required
+Section: admin
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Pre-Depends: perl-base (>= 5.20.1-3~)
+Suggests: debconf-doc, debconf-utils, whiptail | dialog, libterm-readline-gnu-perl, libgtk3-perl, libnet-ldap-perl, perl, debconf-kde-helper (>= 0.1+git20110702)
+Recommends: apt-utils (>= 0.5.1), debconf-i18n
+Conflicts: apt (<< 0.3.12.1), cdebconf (<< 0.96), debconf-tiny, debconf-utils (<< 1.3.22), dialog (<< 0.9b-20020814-1), menu (<= 2.1.3-1), whiptail (<< 0.51.4-11), whiptail-utf8 (<= 0.50.17-13)
+Replaces: debconf-tiny
+Breaks: apt-listchanges (<< 3.14), ubiquity (<< 17.10.2), update-notifier-common (<< 3.187~)
+Provides: debconf-2.0
+
+Package: libgpm2
+Architecture: amd64
+Version: 1.20.7-10build1
+APT-ID: 141
+Multi-Arch: same
+Source: gpm
+Source-Version: 1.20.7-10build1
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: libc6 (>= 2.33)
+Suggests: gpm
+
+Package: vim-common
+Architecture: all
+Version: 2:8.2.3995-1ubuntu2.17
+APT-ID: 316
+Multi-Arch: foreign
+Source: vim
+Source-Version: 2:8.2.3995-1ubuntu2.17
+Priority: required
+Section: editors
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: xxd
+Recommends: vim | vim-gtk3 | vim-athena | vim-nox | vim-tiny
+
+Package: libsystemd0
+Architecture: amd64
+Version: 249.11-0ubuntu3.12
+APT-ID: 229
+Multi-Arch: same
+Source: systemd
+Source-Version: 249.11-0ubuntu3.12
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Pre-Depends: libc6 (>= 2.34), libcap2 (>= 1:2.24-9~), libgcrypt20 (>= 1.9.0), liblz4-1 (>= 0.0~r122), liblzma5 (>= 5.1.1alpha+20120614), libzstd1 (>= 1.4.0)
+
+Package: libtcl8.6
+Architecture: amd64
+Version: 8.6.12+dfsg-1build1
+APT-ID: 232
+Multi-Arch: same
+Source: tcl8.6
+Source-Version: 8.6.12+dfsg-1build1
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: tzdata, libc6 (>= 2.35), zlib1g (>= 1:1.2.2)
+Suggests: tcl8.6
+Conflicts: tcl74 (<= 7.4p3-2), tcl8.6 (<< 8.6.0-2)
+Replaces: tcl8.6 (<< 8.6.0-2)
+Breaks: nsf (<< 2.2.0)
+Provides: libtcl
+
+Package: libmount1
+Architecture: amd64
+Version: 2.37.2-4ubuntu3.4
+APT-ID: 168
+Multi-Arch: same
+Source: util-linux
+Source-Version: 2.37.2-4ubuntu3.4
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libblkid1 (>= 2.17.2), libc6 (>= 2.34), libselinux1 (>= 3.1~)
+Suggests: cryptsetup-bin
+
+Package: binutils-x86-64-linux-gnu
+Architecture: amd64
+Version: 2.38-4ubuntu2.6
+APT-ID: 14
+Multi-Arch: allowed
+Source: binutils
+Source-Version: 2.38-4ubuntu2.6
+Priority: optional
+Section: devel
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: binutils-common (= 2.38-4ubuntu2.6), libbinutils (= 2.38-4ubuntu2.6), libc6 (>= 2.34), libctf-nobfd0 (>= 2.36), libctf0 (>= 2.36), libgcc-s1 (>= 4.2), zlib1g (>= 1:1.1.4)
+Suggests: binutils-doc (= 2.38-4ubuntu2.6)
+Replaces: binutils (<< 2.29-6)
+Breaks: binutils (<< 2.29-6)
+
+Package: gnupg2
+Architecture: all
+Version: 2.2.27-3ubuntu2.1
+APT-ID: 55
+Multi-Arch: foreign
+Source: gnupg2
+Source-Version: 2.2.27-3ubuntu2.1
+Priority: optional
+Section: oldlibs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: gnupg (>= 2.2.27-3ubuntu2.1)
+
+Package: emacsen-common
+Architecture: all
+Version: 3.0.4
+APT-ID: 39
+Source: emacsen-common
+Source-Version: 3.0.4
+Priority: optional
+Section: editors
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Conflicts: emacs19, emacs20, emacs21-common, emacs22-common, emacs23-common, emacs24-common, emacs25-common, xemacs21-support (<< 21.4.24-6~)
+
+Package: bzip2
+Architecture: amd64
+Version: 1.0.8-5build1
+APT-ID: 18
+Multi-Arch: foreign
+Source: bzip2
+Source-Version: 1.0.8-5build1
+Priority: standard
+Section: utils
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libbz2-1.0 (= 1.0.8-5build1), libc6 (>= 2.34)
+Suggests: bzip2-doc
+Replaces: libbz2 (<< 0.9.5d-3)
+
+Package: libpipeline1
+Architecture: amd64
+Version: 1.5.5-1
+APT-ID: 197
+Multi-Arch: same
+Source: libpipeline
+Source-Version: 1.5.5-1
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: libc6 (>= 2.26)
+
+Package: debianutils
+Architecture: amd64
+Version: 5.5-1ubuntu2
+APT-ID: 28
+Essential: yes
+Multi-Arch: foreign
+Source: debianutils
+Source-Version: 5.5-1ubuntu2
+Priority: important
+Section: utils
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Pre-Depends: libc6 (>= 2.34)
+Breaks: ifupdown (<< 0.8.36+nmu1), printer-driver-pnm2ppa (<< 1.13-12), x11-common (<< 1:7.7+23~)
+
+Package: libpopt0
+Architecture: amd64
+Version: 1.18-3build1
+APT-ID: 199
+Multi-Arch: same
+Source: popt
+Source-Version: 1.18-3build1
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: libc6 (>= 2.33)
+
+Package: libllvm14
+Architecture: amd64
+Version: 1:14.0.0-1ubuntu1.1
+APT-ID: 157
+Multi-Arch: same
+Source: llvm-toolchain-14
+Source-Version: 1:14.0.0-1ubuntu1.1
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: libc6 (>= 2.34), libedit2 (>= 2.11-20080614-0), libffi8 (>= 3.4), libgcc-s1 (>= 3.3), libstdc++6 (>= 12), libtinfo6 (>= 6), libxml2 (>= 2.7.4), zlib1g (>= 1:1.2.0)
+
+Package: libnuma1
+Architecture: amd64
+Version: 2.0.14-3ubuntu2
+APT-ID: 181
+Multi-Arch: same
+Source: numactl
+Source-Version: 2.0.14-3ubuntu2
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: libc6 (>= 2.33)
+
+Package: libjsoncpp25
+Architecture: amd64
+Version: 1.9.5-3
+APT-ID: 150
+Multi-Arch: same
+Source: libjsoncpp
+Source-Version: 1.9.5-3
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: libc6 (>= 2.14), libgcc-s1 (>= 3.3.1), libstdc++6 (>= 11)
+
+Package: expect
+Architecture: amd64
+Version: 5.45.4-2build1
+APT-ID: 40
+Multi-Arch: foreign
+Source: expect
+Source-Version: 5.45.4-2build1
+Priority: optional
+Section: interpreters
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: tcl8.6, libc6 (>= 2.4), libtcl8.6 (>= 8.6.0), tcl-expect
+Suggests: tk8.6
+Conflicts: expect-dev
+Replaces: expect-dev
+Provides: expect-dev
+
+Package: python3
+Architecture: amd64
+Version: 3.10.6-1~22.04
+APT-ID: 292
+Multi-Arch: allowed
+Source: python3-defaults
+Source-Version: 3.10.6-1~22.04
+Priority: optional
+Section: python
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: python3.10 (>= 3.10.6-1~), libpython3-stdlib (= 3.10.6-1~22.04)
+Pre-Depends: python3-minimal (= 3.10.6-1~22.04)
+Suggests: python3-doc (>= 3.10.6-1~22.04), python3-tk (>= 3.10.6-1~), python3-venv (>= 3.10.6-1~22.04)
+Replaces: python3-minimal (<< 3.1.2-2)
+Provides: python3-profiler
+
+Package: libudev-dev
+Architecture: amd64
+Version: 249.11-0ubuntu3.12
+APT-ID: 240
+Multi-Arch: same
+Source: systemd
+Source-Version: 249.11-0ubuntu3.12
+Priority: optional
+Section: libdevel
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libudev1 (= 249.11-0ubuntu3.12)
+
+Package: tcl-expect
+Architecture: amd64
+Version: 5.45.4-2build1
+APT-ID: 306
+Multi-Arch: same
+Source: expect
+Source-Version: 5.45.4-2build1
+Priority: optional
+Section: interpreters
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: libtcl8.6, libc6 (>= 2.29)
+Suggests: expect
+Conflicts: expectk (<< 5.45)
+
+Package: gnupg
+Architecture: all
+Version: 2.2.27-3ubuntu2.1
+APT-ID: 52
+Multi-Arch: foreign
+Source: gnupg2
+Source-Version: 2.2.27-3ubuntu2.1
+Priority: optional
+Section: utils
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: dirmngr (<< 2.2.27-3ubuntu2.1.1~), dirmngr (>= 2.2.27-3ubuntu2.1), gnupg-l10n (= 2.2.27-3ubuntu2.1), gnupg-utils (<< 2.2.27-3ubuntu2.1.1~), gnupg-utils (>= 2.2.27-3ubuntu2.1), gpg (<< 2.2.27-3ubuntu2.1.1~), gpg (>= 2.2.27-3ubuntu2.1), gpg-agent (<< 2.2.27-3ubuntu2.1.1~), gpg-agent (>= 2.2.27-3ubuntu2.1), gpg-wks-client (<< 2.2.27-3ubuntu2.1.1~), gpg-wks-client (>= 2.2.27-3ubuntu2.1), gpg-wks-server (<< 2.2.27-3ubuntu2.1.1~), gpg-wks-server (>= 2.2.27-3ubuntu2.1), gpgsm (<< 2.2.27-3ubuntu2.1.1~), gpgsm (>= 2.2.27-3ubuntu2.1), gpgv (<< 2.2.27-3ubuntu2.1.1~), gpgv (>= 2.2.27-3ubuntu2.1)
+Suggests: parcimonie, xloadimage
+Replaces: gnupg2 (<< 2.1.11-7+exp1)
+Breaks: debsig-verify (<< 0.15), dirmngr (<< 2.2.27-3ubuntu2.1), gnupg2 (<< 2.1.11-7+exp1), libgnupg-interface-perl (<< 0.52-3), libgnupg-perl (<= 0.19-1), libmail-gnupg-perl (<= 0.22-1), monkeysphere (<< 0.38~), php-crypt-gpg (<= 1.4.1-1), python-apt (<= 1.1.0~beta4), python-gnupg (<< 0.3.8-3), python3-apt (<= 1.1.0~beta4)
+
+Package: libsasl2-modules-db
+Architecture: amd64
+Version: 2.1.27+dfsg2-3ubuntu1.2
+APT-ID: 211
+Multi-Arch: same
+Source: cyrus-sasl2
+Source-Version: 2.1.27+dfsg2-3ubuntu1.2
+Priority: standard
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: libc6 (>= 2.14), libdb5.3
+
+Package: libmpfr6
+Architecture: amd64
+Version: 4.1.0-3build3
+APT-ID: 171
+Multi-Arch: same
+Source: mpfr4
+Source-Version: 4.1.0-3build3
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: libc6 (>= 2.14), libgmp10 (>= 2:6.2.1+dfsg)
+Breaks: libgmp3 (<< 4.1.4-3), libmpc3 (<< 1.1.0-1~)
+
+Package: libcc1-0
+Architecture: amd64
+Version: 12.3.0-1ubuntu1~22.04
+APT-ID: 97
+Multi-Arch: same
+Source: gcc-12
+Source-Version: 12.3.0-1ubuntu1~22.04
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: gcc-12-base (= 12.3.0-1ubuntu1~22.04), libc6 (>= 2.15), libgcc-s1 (>= 3.0), libstdc++6 (>= 5.2)
+
+Package: zlib1g-dev
+Architecture: amd64
+Version: 1:1.2.11.dfsg-2ubuntu9.2
+APT-ID: 327
+Multi-Arch: same
+Source: zlib
+Source-Version: 1:1.2.11.dfsg-2ubuntu9.2
+Priority: optional
+Section: libdevel
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: zlib1g (= 1:1.2.11.dfsg-2ubuntu9.2), libc6-dev | libc-dev
+Conflicts: zlib1-dev
+Provides: libz-dev
+
+Package: gpg-wks-server
+Architecture: amd64
+Version: 2.2.27-3ubuntu2.1
+APT-ID: 60
+Multi-Arch: foreign
+Source: gnupg2
+Source-Version: 2.2.27-3ubuntu2.1
+Priority: optional
+Section: utils
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: gpg (= 2.2.27-3ubuntu2.1), gpg-agent (= 2.2.27-3ubuntu2.1), libc6 (>= 2.34), libgcrypt20 (>= 1.9.0), libgpg-error0 (>= 1.42)
+Recommends: gnupg (= 2.2.27-3ubuntu2.1)
+
+Package: libkrb5support0
+Architecture: amd64
+Version: 1.19.2-2ubuntu0.4
+APT-ID: 154
+Multi-Arch: same
+Source: krb5
+Source-Version: 1.19.2-2ubuntu0.4
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libc6 (>= 2.34)
+Breaks: libgssapi-krb5-2 (<< 1.13~alpha1-1), libk5crypto3 (<< 1.16), libkadm5clnt-mit9 (<< 1.13~alpha1-1), libkadm5srv-mit9 (<< 1.13~alpha1-1), libkdb5-8 (<< 1.16)
+
+Package: libsepol2
+Architecture: amd64
+Version: 3.3-1build1
+APT-ID: 217
+Multi-Arch: same
+Source: libsepol
+Source-Version: 3.3-1build1
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libc6 (>= 2.33)
+
+Package: ubuntu-keyring
+Architecture: all
+Version: 2021.03.26
+APT-ID: 311
+Multi-Arch: foreign
+Source: ubuntu-keyring
+Source-Version: 2021.03.26
+Priority: required
+Section: misc
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Replaces: ubuntu-cloudimage-keyring (<< 2018.02.05)
+Breaks: ubuntu-cloudimage-keyring (<< 2018.02.05)
+
+Package: libbpf0
+Architecture: amd64
+Version: 1:0.5.0-1ubuntu22.04.1
+APT-ID: 84
+Multi-Arch: same
+Source: libbpf
+Source-Version: 0.5.0-1ubuntu22.04.1
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: libc6 (>= 2.22), libelf1 (>= 0.142), zlib1g (>= 1:1.2.3.3)
+
+Package: libmnl0
+Architecture: amd64
+Version: 1.0.4-3build2
+APT-ID: 167
+Multi-Arch: same
+Source: libmnl
+Source-Version: 1.0.4-3build2
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: libc6 (>= 2.14)
+
+Package: libxml2
+Architecture: amd64
+Version: 2.9.13+dfsg-1ubuntu0.4
+APT-ID: 248
+Multi-Arch: same
+Source: libxml2
+Source-Version: 2.9.13+dfsg-1ubuntu0.4
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: libc6 (>= 2.34), libicu70 (>= 70.1-1~), liblzma5 (>= 5.1.1alpha+20120614), zlib1g (>= 1:1.2.3.3)
+Conflicts: w3c-dtd-xhtml
+
+Package: libmpc3
+Architecture: amd64
+Version: 1.2.1-2build1
+APT-ID: 169
+Multi-Arch: same
+Source: mpclib3
+Source-Version: 1.2.1-2build1
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: libc6 (>= 2.4), libgmp10 (>= 2:6.2.1+dfsg), libmpfr6 (>= 4.0.0)
+
+Package: xz-utils
+Architecture: amd64
+Version: 5.2.5-2ubuntu1
+APT-ID: 324
+Multi-Arch: foreign
+Source: xz-utils
+Source-Version: 5.2.5-2ubuntu1
+Priority: standard
+Section: utils
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libc6 (>= 2.34), liblzma5 (>= 5.2.2)
+Conflicts: lzma (<< 9.22-1), xz-lzma
+Replaces: lzip (<< 1.8~rc2), xz-lzma
+Breaks: lzip (<< 1.8~rc2)
+Provides: lzma
+
+Package: libzstd1
+Architecture: amd64
+Version: 1.4.8+dfsg-3build1
+APT-ID: 255
+Multi-Arch: same
+Source: libzstd
+Source-Version: 1.4.8+dfsg-3build1
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libc6 (>= 2.14)
+
+Package: util-linux
+Architecture: amd64
+Version: 2.37.2-4ubuntu3.4
+APT-ID: 314
+Essential: yes
+Multi-Arch: foreign
+Source: util-linux
+Source-Version: 2.37.2-4ubuntu3.4
+Priority: important
+Section: utils
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Pre-Depends: libaudit1 (>= 1:2.2.1), libblkid1 (>= 2.37.2), libc6 (>= 2.34), libcap-ng0 (>= 0.7.9), libcrypt1 (>= 1:4.1.0), libmount1 (>= 2.37.2), libpam0g (>= 0.99.7.1), libselinux1 (>= 3.1~), libsmartcols1 (>= 2.34), libsystemd0, libtinfo6 (>= 6), libudev1 (>= 183), libuuid1 (>= 2.16), zlib1g (>= 1:1.1.4)
+Suggests: dosfstools, kbd, util-linux-locales
+Conflicts: hardlink
+Replaces: hardlink
+Provides: hardlink
+
+Package: libbsd0
+Architecture: amd64
+Version: 0.11.5-1
+APT-ID: 86
+Multi-Arch: same
+Source: libbsd
+Source-Version: 0.11.5-1
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: libc6 (>= 2.33), libmd0 (>= 1.0.3-2)
+
+Package: less
+Architecture: amd64
+Version: 590-1ubuntu0.22.04.3
+APT-ID: 72
+Multi-Arch: foreign
+Source: less
+Source-Version: 590-1ubuntu0.22.04.3
+Priority: required
+Section: text
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libc6 (>= 2.34), libtinfo6 (>= 6)
+
+Package: psmisc
+Architecture: amd64
+Version: 23.4-2build3
+APT-ID: 291
+Multi-Arch: foreign
+Source: psmisc
+Source-Version: 23.4-2build3
+Priority: optional
+Section: admin
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libc6 (>= 2.34), libtinfo6 (>= 6)
+Replaces: manpages-de (<< 4.9.1-1)
+Breaks: manpages-de (<< 4.9.1-1)
+
+Package: libldap-2.5-0
+Architecture: amd64
+Version: 2.5.18+dfsg-0ubuntu0.22.04.2
+APT-ID: 156
+Multi-Arch: same
+Source: openldap
+Source-Version: 2.5.18+dfsg-0ubuntu0.22.04.2
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: libc6 (>= 2.34), libgnutls30 (>= 3.7.2), libsasl2-2 (>= 2.1.27+dfsg2)
+Recommends: libldap-common
+Conflicts: ldap-utils (<= 2.1.23-1)
+Replaces: libldap-2.3-0, libldap2
+
+Package: libudev1
+Architecture: amd64
+Version: 249.11-0ubuntu3.12
+APT-ID: 241
+Multi-Arch: same
+Source: systemd
+Source-Version: 249.11-0ubuntu3.12
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libc6 (>= 2.34)
+
+Package: gpg-agent
+Architecture: amd64
+Version: 2.2.27-3ubuntu2.1
+APT-ID: 58
+Multi-Arch: foreign
+Source: gnupg2
+Source-Version: 2.2.27-3ubuntu2.1
+Priority: optional
+Section: utils
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: gpgconf (= 2.2.27-3ubuntu2.1), pinentry-curses | pinentry, init-system-helpers (>= 1.52), libassuan0 (>= 2.5.1), libc6 (>= 2.34), libgcrypt20 (>= 1.9.0), libgpg-error0 (>= 1.42), libnpth0 (>= 0.90)
+Suggests: dbus-user-session, libpam-systemd, pinentry-gnome3, scdaemon
+Recommends: gnupg (= 2.2.27-3ubuntu2.1)
+Replaces: gnupg-agent (<< 2.1.21-4)
+Breaks: gnupg-agent (<< 2.1.21-4)
+Provides: gnupg-agent
+
+Package: libgpg-error0
+Architecture: amd64
+Version: 1.43-3
+APT-ID: 140
+Multi-Arch: same
+Source: libgpg-error
+Source-Version: 1.43-3
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libc6 (>= 2.34)
+Recommends: libgpg-error-l10n
+
+Package: wget
+Architecture: amd64
+Version: 1.21.2-2ubuntu1.1
+APT-ID: 320
+Multi-Arch: foreign
+Source: wget
+Source-Version: 1.21.2-2ubuntu1.1
+Priority: standard
+Section: web
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libc6 (>= 2.34), libidn2-0 (>= 0.6), libpcre2-8-0 (>= 10.22), libpsl5 (>= 0.16.0), libssl3 (>= 3.0.0~~alpha1), libuuid1 (>= 2.16), zlib1g (>= 1:1.1.4)
+Recommends: ca-certificates
+Conflicts: wget-ssl
+
+Package: libclang1-14
+Architecture: amd64
+Version: 1:14.0.0-1ubuntu1.1
+APT-ID: 99
+Source: llvm-toolchain-14
+Source-Version: 1:14.0.0-1ubuntu1.1
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: libc6 (>= 2.34), libgcc-s1 (>= 3.0), libllvm14, libstdc++6 (>= 11)
+
+Package: libreadline8
+Architecture: amd64
+Version: 8.1.2-1
+APT-ID: 207
+Multi-Arch: same
+Source: readline
+Source-Version: 8.1.2-1
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: readline-common, libc6 (>= 2.33), libtinfo6 (>= 6)
+
+Package: libcom-err2
+Architecture: amd64
+Version: 1.46.5-2ubuntu1.1
+APT-ID: 100
+Multi-Arch: same
+Source: e2fsprogs
+Source-Version: 1.46.5-2ubuntu1.1
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libc6 (>= 2.17)
+Replaces: libcomerr2 (<< 1.43.9-1~)
+Breaks: libcomerr2 (<< 1.43.9-1~)
+Provides: libcomerr2 (= 1.46.5-2ubuntu1.1)
+
+Package: doxygen
+Architecture: amd64
+Version: 1.9.1-2ubuntu2
+APT-ID: 35
+Multi-Arch: foreign
+Source: doxygen
+Source-Version: 1.9.1-2ubuntu2
+Priority: optional
+Section: devel
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libc6 (>= 2.34), libclang-cpp14 (>= 1:14.0.0~+rc1), libclang1-14 (>= 1:5.0~svn298832-1~), libgcc-s1 (>= 3.0), libllvm14, libstdc++6 (>= 11), libxapian30 (>= 1.4.17~)
+Suggests: doxygen-latex, doxygen-doc, doxygen-gui, graphviz
+Conflicts: graphviz (<< 1.12)
+
+Package: gettext-base
+Architecture: amd64
+Version: 0.21-4ubuntu4
+APT-ID: 49
+Multi-Arch: foreign
+Source: gettext
+Source-Version: 0.21-4ubuntu4
+Priority: standard
+Section: utils
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: libc6 (>= 2.34)
+
+Package: diffutils
+Architecture: amd64
+Version: 1:3.8-0ubuntu2
+APT-ID: 31
+Essential: yes
+Source: diffutils
+Source-Version: 1:3.8-0ubuntu2
+Priority: important
+Section: utils
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Pre-Depends: libc6 (>= 2.34)
+Suggests: diffutils-doc, wdiff
+Replaces: diff
+
+Package: strace
+Architecture: amd64
+Version: 5.16-0ubuntu3
+APT-ID: 302
+Source: strace
+Source-Version: 5.16-0ubuntu3
+Priority: optional
+Section: utils
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libc6 (>= 2.34), libunwind8
+
+Package: sensible-utils
+Architecture: all
+Version: 0.0.17
+APT-ID: 300
+Multi-Arch: foreign
+Source: sensible-utils
+Source-Version: 0.0.17
+Priority: important
+Section: utils
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Replaces: debianutils (<= 2.32.3), manpages-pl (<= 20060617-3~)
+
+Package: libpcre2-posix3
+Architecture: amd64
+Version: 10.39-3ubuntu0.1
+APT-ID: 194
+Multi-Arch: same
+Source: pcre2
+Source-Version: 10.39-3ubuntu0.1
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: libc6 (>= 2.4), libpcre2-8-0 (>= 10.22)
+Conflicts: libpcre2-posix0
+Replaces: libpcre2-posix0
+
+Package: libassuan0
+Architecture: amd64
+Version: 2.5.5-1build1
+APT-ID: 77
+Multi-Arch: same
+Source: libassuan
+Source-Version: 2.5.5-1build1
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: libc6 (>= 2.33), libgpg-error0 (>= 1.33)
+
+Package: libnpth0
+Architecture: amd64
+Version: 1.6-3build2
+APT-ID: 178
+Multi-Arch: same
+Source: npth
+Source-Version: 1.6-3build2
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: libc6 (>= 2.34)
+
+Package: liblzma-dev
+Architecture: amd64
+Version: 5.2.5-2ubuntu1
+APT-ID: 164
+Multi-Arch: same
+Source: xz-utils
+Source-Version: 5.2.5-2ubuntu1
+Priority: optional
+Section: libdevel
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: liblzma5 (= 5.2.5-2ubuntu1)
+Suggests: liblzma-doc
+
+Package: lsof
+Architecture: amd64
+Version: 4.93.2+dfsg-1.1build2
+APT-ID: 262
+Source: lsof
+Source-Version: 4.93.2+dfsg-1.1build2
+Priority: standard
+Section: utils
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libc6 (>= 2.34), libselinux1 (>= 3.1~), libtirpc3 (>= 1.0.2)
+Suggests: perl
+
+Package: libsodium23
+Architecture: amd64
+Version: 1.0.18-1build2
+APT-ID: 220
+Multi-Arch: same
+Source: libsodium
+Source-Version: 1.0.18-1build2
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: libc6 (>= 2.33)
+
+Package: libcap2
+Architecture: amd64
+Version: 1:2.44-1ubuntu0.22.04.1
+APT-ID: 94
+Multi-Arch: same
+Source: libcap2
+Source-Version: 1:2.44-1ubuntu0.22.04.1
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libc6 (>= 2.33)
+
+Package: libc6
+Architecture: amd64
+Version: 2.35-0ubuntu3.8
+APT-ID: 91
+Multi-Arch: same
+Source: glibc
+Source-Version: 2.35-0ubuntu3.8
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libgcc-s1, libcrypt1 (>= 1:4.4.10-10ubuntu4)
+Suggests: glibc-doc, debconf | debconf-2.0, locales
+Recommends: libidn2-0 (>= 2.0.5~), libnss-nis, libnss-nisplus
+Replaces: libc6-amd64
+Breaks: busybox (<< 1.30.1-6), fakeroot (<< 1.25.3-1.1ubuntu2~), hurd (<< 1:0.9.git20170910-1), ioquake3 (<< 1.36+u20200211.f2c61c1~dfsg-2~), iraf-fitsutil (<< 2018.07.06-4), libgegl-0.4-0 (<< 0.4.18), libtirpc1 (<< 0.2.3), locales (<< 2.35), locales-all (<< 2.35), macs (<< 2.2.7.1-3~), nocache (<< 1.1-1~), nscd (<< 2.35), openarena (<< 0.8.8+dfsg-4~), openssh-server (<< 1:8.2p1-4), r-cran-later (<< 0.7.5+dfsg-2), wcc (<< 0.0.2+dfsg-3)
+
+Package: locales
+Architecture: all
+Version: 2.35-0ubuntu3.8
+APT-ID: 257
+Source: glibc
+Source-Version: 2.35-0ubuntu3.8
+Priority: standard
+Section: localization
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libc-bin (>> 2.35), debconf (>= 0.5) | debconf-2.0
+
+Package: dpkg-dev
+Architecture: all
+Version: 1.21.1ubuntu2.3
+APT-ID: 37
+Multi-Arch: foreign
+Source: dpkg
+Source-Version: 1.21.1ubuntu2.3
+Priority: optional
+Section: utils
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: perl:any, libdpkg-perl (= 1.21.1ubuntu2.3), tar (>= 1.28-1), bzip2, xz-utils, patch (>= 2.7), make, binutils, lto-disabled-list
+Suggests: debian-keyring
+Recommends: build-essential, gcc | c-compiler, fakeroot, gnupg, gpgv, libalgorithm-merge-perl
+Breaks: debhelper (<< 10.10.1~)
+
+Package: libasan6
+Architecture: amd64
+Version: 11.4.0-1ubuntu1~22.04
+APT-ID: 76
+Multi-Arch: same
+Source: gcc-11
+Source-Version: 11.4.0-1ubuntu1~22.04
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: gcc-11-base (= 11.4.0-1ubuntu1~22.04), libc6 (>= 2.34), libgcc-s1
+
+Package: docbook-xsl
+Architecture: all
+Version: 1.79.2+dfsg-1
+APT-ID: 34
+Multi-Arch: foreign
+Source: docbook-xsl
+Source-Version: 1.79.2+dfsg-1
+Priority: optional
+Section: text
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: xml-core (>= 0.14)
+Suggests: dbtoepub, docbook-xsl-doc-html | docbook-xsl-doc-pdf | docbook-xsl-doc-text | docbook-xsl-doc, docbook-xsl-saxon, fop, libsaxon-java, libxalan2-java, libxslthl-java, xalan
+Recommends: docbook-xml (>= 4.1.2-4)
+Provides: docbook-xsl-nons
+
+Package: libpcre2-16-0
+Architecture: amd64
+Version: 10.39-3ubuntu0.1
+APT-ID: 190
+Multi-Arch: same
+Source: pcre2
+Source-Version: 10.39-3ubuntu0.1
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: libc6 (>= 2.14)
+
+Package: libssl3
+Architecture: amd64
+Version: 3.0.2-0ubuntu1.17
+APT-ID: 225
+Multi-Arch: same
+Source: openssl
+Source-Version: 3.0.2-0ubuntu1.17
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libc6 (>= 2.34), debconf (>= 0.5) | debconf-2.0
+
+Package: libuchardet0
+Architecture: amd64
+Version: 0.0.7-1build2
+APT-ID: 239
+Multi-Arch: same
+Source: uchardet
+Source-Version: 0.0.7-1build2
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: libc6 (>= 2.14), libgcc-s1 (>= 3.3.1), libstdc++6 (>= 4.1.1)
+
+Package: libnsl-dev
+Architecture: amd64
+Version: 1.3.0-2build2
+APT-ID: 179
+Multi-Arch: same
+Source: libnsl
+Source-Version: 1.3.0-2build2
+Priority: optional
+Section: libdevel
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: libnsl2 (= 1.3.0-2build2), libtirpc-dev
+Replaces: libc6-dev (<< 2.31-4)
+Breaks: libc6-dev (<< 2.31-4)
+
+Package: libkrb5-3
+Architecture: amd64
+Version: 1.19.2-2ubuntu0.4
+APT-ID: 153
+Multi-Arch: same
+Source: krb5
+Source-Version: 1.19.2-2ubuntu0.4
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libc6 (>= 2.34), libcom-err2 (>= 1.43.9), libk5crypto3 (>= 1.15~beta1), libkeyutils1 (>= 1.5.9), libkrb5support0 (= 1.19.2-2ubuntu0.4), libssl3 (>= 3.0.0~~alpha1)
+Suggests: krb5-doc, krb5-user
+Recommends: krb5-locales
+Breaks: libapache2-mod-auth-kerb (<= 5.4-2.4), libsmbclient (<= 2:3.6.1-2), sssd (<= 1.2.1-4.3)
+
+Package: usrmerge
+Architecture: all
+Version: 25ubuntu2
+APT-ID: 313
+Multi-Arch: foreign
+Source: usrmerge
+Source-Version: 25ubuntu2
+Priority: optional
+Section: admin
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: perl-base (>= 5.32.1-3)
+Conflicts: acl (<< 2.2.52-3~), arptables (<< 0.0.4+snapshot20181021-1~), coreutils (<< 8.24-1~), cryptsetup (<< 2:1.7.0-1~), davfs2 (<< 1.5.2-1.2~), debianutils (<< 4.5~), ebtables (<< 2.0.10.4+snapshot20181205-1~), elvis-tiny (<< 1.4-24~), kbd (<< 2.0.3-1~), ksh (<< 93u+20120801-3.1~), less (<< 481-2~), libbrlapi-dev (<< 5.3.1-1~), libdm0-dev, libjson-c-dev (<< 0.12.1-1.1~), libpng12-0 (<< 1.2.54-4~), libusb-0.1-4 (<< 2:0.1.12-28~), mksh (<< 52b-1~), molly-guard (<< 0.7.1+exp1~), musl-dev (<< 1.1.9-1.1~), nano (<< 2.3.99pre3-1~), open-iscsi (<< 2.0.873+git0.3b4b4500-13~), open-vm-tools (<< 2:10.0.5-3227872-2~), policycoreutils (<< 2.4-4~), safe-rm (<< 0.12-6~), tcsh (<< 6.18.01-4~), vsearch (<< 1.9.5-2~), xfsdump (<< 3.1.6+nmu1~), xfslibs-dev (<< 4.9.0+nmu1~), yp-tools (<< 3.3-5~), zsh (<< 5.2-4~)
+Breaks: cruft-ng (<< 0.4.4~), initramfs-tools (<< 0.121~)
+
+Package: libpam-modules
+Architecture: amd64
+Version: 1.4.0-11ubuntu2.4
+APT-ID: 186
+Multi-Arch: same
+Source: pam
+Source-Version: 1.4.0-11ubuntu2.4
+Priority: important
+Section: admin
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Pre-Depends: libaudit1 (>= 1:2.2.1), libc6 (>= 2.34), libcrypt1 (>= 1:4.3.0), libdb5.3, libnsl2 (>= 1.0), libpam0g (>= 1.3.2), libselinux1 (>= 3.1~), libtirpc3 (>= 1.0.2), debconf (>= 0.5) | debconf-2.0, libpam-modules-bin (= 1.4.0-11ubuntu2.4)
+Conflicts: libpam-mkhomedir, libpam-motd, libpam-umask
+Replaces: libpam-umask, libpam0g-util
+Provides: libpam-umask, libpam-motd, libpam-mkhomedir
+
+Package: libpython3.10
+Architecture: amd64
+Version: 3.10.12-1~22.04.5
+APT-ID: 203
+Multi-Arch: same
+Source: python3.10
+Source-Version: 3.10.12-1~22.04.5
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: libpython3.10-stdlib (= 3.10.12-1~22.04.5), libc6 (>= 2.35), libexpat1 (>= 2.1~beta3), zlib1g (>= 1:1.2.0)
+
+Package: rpcsvc-proto
+Architecture: amd64
+Version: 1.4.2-0ubuntu6
+APT-ID: 297
+Multi-Arch: foreign
+Source: rpcsvc-proto
+Source-Version: 1.4.2-0ubuntu6
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: libc6 (>= 2.34)
+Replaces: libc6-dev (<< 2.32), libc6-dev-bin (<< 2.32)
+Breaks: libc6-dev (<< 2.32), libc6-dev-bin (<< 2.32)
+
+Package: manpages
+Architecture: all
+Version: 5.10-1ubuntu1
+APT-ID: 266
+Multi-Arch: foreign
+Source: manpages
+Source-Version: 5.10-1ubuntu1
+Priority: standard
+Section: doc
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Suggests: man-browser
+Replaces: attr (<< 1:2.4.47-3), keyutils (<< 1.6-1), manpages-dev (<< 5.09-2)
+Breaks: attr (<< 1:2.4.47-3), keyutils (<< 1.6-1), manpages-dev (<< 5.09-2)
+
+Package: libuuid1
+Architecture: amd64
+Version: 2.37.2-4ubuntu3.4
+APT-ID: 245
+Multi-Arch: same
+Source: util-linux
+Source-Version: 2.37.2-4ubuntu3.4
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libc6 (>= 2.25)
+Recommends: uuid-runtime
+
+Package: man-db
+Architecture: amd64
+Version: 2.10.2-1
+APT-ID: 265
+Multi-Arch: foreign
+Source: man-db
+Source-Version: 2.10.2-1
+Priority: required
+Section: doc
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: bsdextrautils | bsdmainutils (<< 12.1.1~), groff-base, debconf (>= 0.5) | debconf-2.0, libc6 (>= 2.34), libgdbm6 (>= 1.16), libpipeline1 (>= 1.5.0), libseccomp2 (>= 2.1.0), zlib1g (>= 1:1.1.4)
+Suggests: apparmor, groff, less, www-browser
+Conflicts: man
+Replaces: man, nlsutils
+Provides: man-browser, man
+
+Package: gpgv
+Architecture: amd64
+Version: 2.2.27-3ubuntu2.1
+APT-ID: 63
+Multi-Arch: foreign
+Source: gnupg2
+Source-Version: 2.2.27-3ubuntu2.1
+Priority: required
+Section: utils
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libbz2-1.0, libc6 (>= 2.34), libgcrypt20 (>= 1.9.0), libgpg-error0 (>= 1.42), zlib1g (>= 1:1.1.4)
+Suggests: gnupg
+Replaces: gnupg2 (<< 2.0.21-2), gpgv2 (<< 2.1.11-7+exp1)
+Breaks: gnupg2 (<< 2.0.21-2), gpgv2 (<< 2.1.11-7+exp1), python-debian (<< 0.1.29)
+
+Package: bash
+Architecture: amd64
+Version: 5.1-6ubuntu1.1
+APT-ID: 10
+Essential: yes
+Multi-Arch: foreign
+Source: bash
+Source-Version: 5.1-6ubuntu1.1
+Priority: important
+Section: shells
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: base-files (>= 2.1.12), debianutils (>= 2.15)
+Pre-Depends: libc6 (>= 2.34), libtinfo6 (>= 6)
+Suggests: bash-doc
+Recommends: bash-completion (>= 20060301-0)
+Conflicts: bash-completion (<< 20060301-0)
+Replaces: bash-completion (<< 20060301-0), bash-doc (<= 2.05-1)
+
+Package: libgcrypt20
+Architecture: amd64
+Version: 1.9.4-3ubuntu3
+APT-ID: 125
+Multi-Arch: same
+Source: libgcrypt20
+Source-Version: 1.9.4-3ubuntu3
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libc6 (>= 2.33), libgpg-error0 (>= 1.27)
+Suggests: rng-tools
+
+Package: grep
+Architecture: amd64
+Version: 3.7-1build1
+APT-ID: 64
+Essential: yes
+Multi-Arch: foreign
+Source: grep
+Source-Version: 3.7-1build1
+Priority: important
+Section: utils
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: dpkg (>= 1.15.4) | install-info
+Pre-Depends: libc6 (>= 2.34), libpcre3
+Suggests: libpcre3 (>= 7.7)
+Conflicts: rgrep
+Provides: rgrep
+
+Package: media-types
+Architecture: all
+Version: 7.0.0
+APT-ID: 269
+Multi-Arch: foreign
+Source: media-types
+Source-Version: 7.0.0
+Priority: standard
+Section: net
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Replaces: mime-support (<< 3.65)
+Breaks: mime-support (<< 3.65)
+
+Package: make
+Architecture: amd64
+Version: 4.3-4.1build1
+APT-ID: 264
+Multi-Arch: allowed
+Source: make-dfsg
+Source-Version: 4.3-4.1build1
+Priority: optional
+Section: devel
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: libc6 (>= 2.34)
+Suggests: make-doc
+Conflicts: make-guile
+Replaces: make-guile
+
+Package: mawk
+Architecture: amd64
+Version: 1.3.4.20200120-3
+APT-ID: 268
+Multi-Arch: foreign
+Source: mawk
+Source-Version: 1.3.4.20200120-3
+Priority: important
+Section: interpreters
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libc6 (>= 2.34)
+Provides: awk
+
+Package: net-tools
+Architecture: amd64
+Version: 1.60+git20181103.0eebece-1ubuntu5
+APT-ID: 275
+Multi-Arch: foreign
+Source: net-tools
+Source-Version: 1.60+git20181103.0eebece-1ubuntu5
+Priority: required
+Section: net
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libc6 (>= 2.34), libselinux1 (>= 3.1~)
+
+Package: libcap-ng0
+Architecture: amd64
+Version: 0.7.9-2.2build3
+APT-ID: 93
+Multi-Arch: same
+Source: libcap-ng
+Source-Version: 0.7.9-2.2build3
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libc6 (>= 2.33)
+
+Package: vim-tiny
+Architecture: amd64
+Version: 2:8.2.3995-1ubuntu2.17
+APT-ID: 318
+Source: vim
+Source-Version: 2:8.2.3995-1ubuntu2.17
+Priority: required
+Section: editors
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: vim-common (= 2:8.2.3995-1ubuntu2.17), libacl1 (>= 2.2.23), libc6 (>= 2.34), libselinux1 (>= 3.1~), libtinfo6 (>= 6)
+Suggests: indent
+Provides: editor
+
+Package: libctf0
+Architecture: amd64
+Version: 2.38-4ubuntu2.6
+APT-ID: 104
+Multi-Arch: same
+Source: binutils
+Source-Version: 2.38-4ubuntu2.6
+Priority: optional
+Section: devel
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: libbinutils (= 2.38-4ubuntu2.6), libc6 (>= 2.33), zlib1g (>= 1:1.2.0)
+
+Package: libsemanage2
+Architecture: amd64
+Version: 3.3-1build2
+APT-ID: 216
+Multi-Arch: same
+Source: libsemanage
+Source-Version: 3.3-1build2
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libsemanage-common (>= 3.3-1build2), libaudit1 (>= 1:2.2.1), libbz2-1.0, libc6 (>= 2.33), libselinux1 (>= 3.3), libsepol2 (>= 3.3)
+Breaks: policycoreutils (<< 3.0)
+
+Package: libclang-cpp14
+Architecture: amd64
+Version: 1:14.0.0-1ubuntu1.1
+APT-ID: 98
+Source: llvm-toolchain-14
+Source-Version: 1:14.0.0-1ubuntu1.1
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: libc6 (>= 2.34), libgcc-s1 (>= 3.0), libllvm14 (= 1:14.0.0-1ubuntu1.1), libstdc++6 (>= 12)
+
+Package: libnsl2
+Architecture: amd64
+Version: 1.3.0-2build2
+APT-ID: 180
+Multi-Arch: same
+Source: libnsl
+Source-Version: 1.3.0-2build2
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libc6 (>= 2.33), libtirpc3 (>= 1.0.2)
+
+Package: base-files
+Architecture: amd64
+Version: 12ubuntu4.6
+APT-ID: 8
+Essential: yes
+Multi-Arch: foreign
+Source: base-files
+Source-Version: 12ubuntu4.6
+Priority: important
+Section: admin
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libc6 (>= 2.34), libcrypt1 (>= 1:4.4.10-10ubuntu3)
+Pre-Depends: awk
+Replaces: base, dpkg (<= 1.15.0), miscutils
+Breaks: debian-security-support (<< 2019.04.25), initscripts (<< 2.88dsf-13.3), sendfile (<< 2.1b.20080616-5.2~), ubuntu-server (<< 1.453)
+Provides: base
+
+Package: libk5crypto3
+Architecture: amd64
+Version: 1.19.2-2ubuntu0.4
+APT-ID: 151
+Multi-Arch: same
+Source: krb5
+Source-Version: 1.19.2-2ubuntu0.4
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libc6 (>= 2.33), libkrb5support0 (>= 1.16)
+Suggests: krb5-doc, krb5-user
+Breaks: libgssapi-krb5-2 (<= 1.18~), libkrb5-3 (<= 1.18~)
+
+Package: ncurses-base
+Architecture: all
+Version: 6.3-2ubuntu0.1
+APT-ID: 273
+Essential: yes
+Multi-Arch: foreign
+Source: ncurses
+Source-Version: 6.3-2ubuntu0.1
+Priority: important
+Section: misc
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Breaks: bash-static (<< 4.4.18-1.1), libmono-corlib4.5-cil (<< 4.6.2.7+dfsg-2), libslang2 (<< 2.3.1a-3), libtinfo5 (<< 6.1), libunibilium0 (<< 2), libunibilium4 (<< 2.0.0-3), neovim (<< 0.6.0), zsh-static (<< 5.4.2-4)
+Provides: ncurses-runtime
+
+Package: gzip
+Architecture: amd64
+Version: 1.10-4ubuntu4.1
+APT-ID: 66
+Essential: yes
+Source: gzip
+Source-Version: 1.10-4ubuntu4.1
+Priority: important
+Section: utils
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: dpkg (>= 1.15.4) | install-info
+Pre-Depends: libc6 (>= 2.34)
+Suggests: less
+
+Package: lto-disabled-list
+Architecture: all
+Version: 24
+APT-ID: 263
+Source: lto-disabled-list
+Source-Version: 24
+Priority: optional
+Section: devel
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+
+Package: libp11-kit-dev
+Architecture: amd64
+Version: 0.24.0-6build1
+APT-ID: 184
+Multi-Arch: same
+Source: p11-kit
+Source-Version: 0.24.0-6build1
+Priority: optional
+Section: libdevel
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: libp11-kit0 (= 0.24.0-6build1)
+Suggests: p11-kit-doc
+
+Package: login
+Architecture: amd64
+Version: 1:4.8.1-2ubuntu2.2
+APT-ID: 258
+Essential: yes
+Multi-Arch: foreign
+Source: shadow
+Source-Version: 1:4.8.1-2ubuntu2.2
+Priority: important
+Section: admin
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Pre-Depends: libaudit1 (>= 1:2.2.1), libc6 (>= 2.34), libcrypt1 (>= 1:4.1.0), libpam0g (>= 0.99.7.1), libpam-runtime, libpam-modules
+Conflicts: python-4suite (<< 0.99cvs20060405-1)
+Breaks: util-linux (<< 2.32-0.2~)
+
+Package: tcl8.6
+Architecture: amd64
+Version: 8.6.12+dfsg-1build1
+APT-ID: 307
+Multi-Arch: foreign
+Source: tcl8.6
+Source-Version: 8.6.12+dfsg-1build1
+Priority: optional
+Section: interpreters
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: libc6 (>= 2.34), libtcl8.6 (>= 8.6.0)
+Suggests: tcl-tclreadline
+Conflicts: tcl74 (<= 7.4p3-2)
+
+Package: libssl-dev
+Architecture: amd64
+Version: 3.0.2-0ubuntu1.17
+APT-ID: 224
+Multi-Arch: same
+Source: openssl
+Source-Version: 3.0.2-0ubuntu1.17
+Priority: optional
+Section: libdevel
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libssl3 (= 3.0.2-0ubuntu1.17)
+Suggests: libssl-doc
+Conflicts: libssl1.0-dev
+
+Package: libsqlite3-0
+Architecture: amd64
+Version: 3.37.2-2ubuntu0.3
+APT-ID: 221
+Multi-Arch: same
+Source: sqlite3
+Source-Version: 3.37.2-2ubuntu0.3
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: libc6 (>= 2.34)
+Breaks: python-migrate (<< 0.11.0-4~), python3-migrate (<< 0.11.0-4~)
+
+Package: libdb5.3-dev
+Architecture: amd64
+Version: 5.3.28+dfsg1-0.8ubuntu3
+APT-ID: 110
+Source: db5.3
+Source-Version: 5.3.28+dfsg1-0.8ubuntu3
+Priority: extra
+Section: libdevel
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: libdb5.3 (= 5.3.28+dfsg1-0.8ubuntu3)
+Suggests: db5.3-doc
+Conflicts: libdb4.6-dev, libdb4.7-dev, libdb4.8-dev, libdb5.1-dev, libdb5.2-dev
+
+Package: libevent-2.1-7
+Architecture: amd64
+Version: 2.1.12-stable-1build3
+APT-ID: 116
+Multi-Arch: same
+Source: libevent
+Source-Version: 2.1.12-stable-1build3
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: libc6 (>= 2.33)
+
+Package: hostname
+Architecture: amd64
+Version: 3.23ubuntu2
+APT-ID: 67
+Essential: yes
+Source: hostname
+Source-Version: 3.23ubuntu2
+Priority: important
+Section: admin
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Pre-Depends: libc6 (>= 2.34)
+Replaces: nis (<< 3.17-30)
+Breaks: nis (<< 3.17-30)
+
+Package: rsync
+Architecture: amd64
+Version: 3.2.7-0ubuntu0.22.04.2
+APT-ID: 298
+Multi-Arch: foreign
+Source: rsync
+Source-Version: 3.2.7-0ubuntu0.22.04.2
+Priority: optional
+Section: net
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: lsb-base, libacl1 (>= 2.2.23), libc6 (>= 2.34), liblz4-1 (>= 0.0~r130), libpopt0 (>= 1.14), libssl3 (>= 3.0.0~~alpha1), libxxhash0 (>= 0.8.0), libzstd1 (>= 1.4.0), zlib1g (>= 1:1.1.4)
+Pre-Depends: init-system-helpers (>= 1.54~)
+Suggests: openssh-client, openssh-server, python3, python3-braceexpand
+
+Package: pinentry-curses
+Architecture: amd64
+Version: 1.1.1-1build2
+APT-ID: 287
+Multi-Arch: foreign
+Source: pinentry
+Source-Version: 1.1.1-1build2
+Priority: optional
+Section: utils
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: libassuan0 (>= 2.1.0), libc6 (>= 2.34), libgpg-error0 (>= 1.16), libncursesw6 (>= 6), libtinfo6 (>= 6)
+Suggests: pinentry-doc
+Enhances: gnupg-agent
+Provides: pinentry
+
+Package: gpgsm
+Architecture: amd64
+Version: 2.2.27-3ubuntu2.1
+APT-ID: 62
+Multi-Arch: foreign
+Source: gnupg2
+Source-Version: 2.2.27-3ubuntu2.1
+Priority: optional
+Section: utils
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: gpgconf (= 2.2.27-3ubuntu2.1), libassuan0 (>= 2.5.0), libc6 (>= 2.34), libgcrypt20 (>= 1.9.0), libgpg-error0 (>= 1.42), libksba8 (>= 1.6.0), libreadline8 (>= 6.0)
+Recommends: gnupg (= 2.2.27-3ubuntu2.1)
+Replaces: gnupg2 (<< 2.1.10-2)
+Breaks: gnupg2 (<< 2.1.10-2)
+
+Package: libxslt1.1
+Architecture: amd64
+Version: 1.1.34-4ubuntu0.22.04.1
+APT-ID: 249
+Multi-Arch: same
+Source: libxslt
+Source-Version: 1.1.34-4ubuntu0.22.04.1
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: libc6 (>= 2.33), libgcrypt20 (>= 1.9.0), libxml2 (>= 2.9.0)
+
+Package: libunbound8
+Architecture: amd64
+Version: 1.13.1-1ubuntu5.5
+APT-ID: 242
+Multi-Arch: same
+Source: unbound
+Source-Version: 1.13.1-1ubuntu5.5
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: libc6 (>= 2.34), libevent-2.1-7 (>= 2.1.8-stable), libgmp10 (>= 2:6.2.1+dfsg), libhogweed6, libnettle8
+
+Package: libprocps8
+Architecture: amd64
+Version: 2:3.3.17-6ubuntu2.1
+APT-ID: 200
+Multi-Arch: same
+Source: procps
+Source-Version: 2:3.3.17-6ubuntu2.1
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libc6 (>= 2.34), libsystemd0 (>= 209)
+Replaces: procps (<< 1:3.3.2-1)
+
+Package: gettext
+Architecture: amd64
+Version: 0.21-4ubuntu4
+APT-ID: 48
+Multi-Arch: foreign
+Source: gettext
+Source-Version: 0.21-4ubuntu4
+Priority: optional
+Section: devel
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libc6 (>= 2.34), libgomp1 (>= 6), libunistring2 (>= 1.0), libxml2 (>= 2.9.1), gettext-base, dpkg (>= 1.15.4) | install-info
+Suggests: gettext-doc, autopoint, libasprintf-dev, libgettextpo-dev
+Recommends: curl | wget | lynx
+Breaks: autopoint (<= 0.17-11)
+
+Package: libcrypt-dev
+Architecture: amd64
+Version: 1:4.4.27-1
+APT-ID: 101
+Multi-Arch: same
+Source: libxcrypt
+Source-Version: 1:4.4.27-1
+Priority: optional
+Section: libdevel
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: libcrypt1 (= 1:4.4.27-1)
+Conflicts: libcrypt1-dev, libcrypt2-dev
+Replaces: libc6-dev (<< 2.29-4), libcrypt1-dev, libcrypt2-dev, manpages-dev (<< 5.01-1)
+Breaks: libc6-dev (<< 2.29-4), manpages-dev (<< 5.01-1)
+Provides: libcrypt1-dev
+
+Package: adduser
+Architecture: all
+Version: 3.118ubuntu5
+APT-ID: 4
+Multi-Arch: foreign
+Source: adduser
+Source-Version: 3.118ubuntu5
+Priority: required
+Section: admin
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: passwd, debconf (>= 0.5) | debconf-2.0
+Suggests: liblocale-gettext-perl, perl, ecryptfs-utils (>= 67-1)
+
+Package: findutils
+Architecture: amd64
+Version: 4.8.0-1ubuntu3
+APT-ID: 41
+Essential: yes
+Multi-Arch: foreign
+Source: findutils
+Source-Version: 4.8.0-1ubuntu3
+Priority: important
+Section: utils
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Pre-Depends: libc6 (>= 2.34), libselinux1 (>= 3.1~)
+Suggests: mlocate | locate
+Breaks: binstats (<< 1.08-8.1), guilt (<< 0.36-0.2), libpython3.4-minimal (<< 3.4.4-2), libpython3.5-minimal (<< 3.5.1-3), lsat (<< 0.9.7.1-2.1), mc (<< 3:4.8.11-1), switchconf (<< 0.0.9-2.1)
+
+Package: dh-elpa-helper
+Architecture: all
+Version: 2.0.9ubuntu1
+APT-ID: 29
+Source: dh-elpa
+Source-Version: 2.0.9ubuntu1
+Priority: optional
+Section: devel
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+
+Package: libzstd-dev
+Architecture: amd64
+Version: 1.4.8+dfsg-3build1
+APT-ID: 254
+Multi-Arch: same
+Source: libzstd
+Source-Version: 1.4.8+dfsg-3build1
+Priority: optional
+Section: libdevel
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libzstd1 (= 1.4.8+dfsg-3build1)
+
+Package: libgmp10
+Architecture: amd64
+Version: 2:6.2.1+dfsg-3ubuntu1
+APT-ID: 131
+Multi-Arch: same
+Source: gmp
+Source-Version: 2:6.2.1+dfsg-3ubuntu1
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libc6 (>= 2.14)
+Breaks: libmath-gmp-perl (<< 2.20-1), libmath-prime-util-gmp-perl (<< 0.51-2), postgresql-pgmp (<< 1.0.3-1)
+
+Package: distro-info-data
+Architecture: all
+Version: 0.52ubuntu0.7
+APT-ID: 33
+Multi-Arch: foreign
+Source: distro-info-data
+Source-Version: 0.52ubuntu0.7
+Priority: optional
+Section: devel
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Breaks: distro-info (<< 1.0~)
+
+Package: libxxhash0
+Architecture: amd64
+Version: 0.8.1-1
+APT-ID: 252
+Multi-Arch: same
+Source: xxhash
+Source-Version: 0.8.1-1
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libc6 (>= 2.14)
+
+Package: libpcre2-8-0
+Architecture: amd64
+Version: 10.39-3ubuntu0.1
+APT-ID: 192
+Multi-Arch: same
+Source: pcre2
+Source-Version: 10.39-3ubuntu0.1
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libc6 (>= 2.14)
+
+Package: pkg-config
+Architecture: amd64
+Version: 0.29.2-1ubuntu3
+APT-ID: 288
+Multi-Arch: foreign
+Source: pkg-config
+Source-Version: 0.29.2-1ubuntu3
+Priority: optional
+Section: devel
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libc6 (>= 2.34), libglib2.0-0 (>= 2.16.0), libdpkg-perl
+Suggests: dpkg-dev
+Conflicts: pkg-config-bin
+Replaces: pkg-config-bin
+
+Package: libcrypt1
+Architecture: amd64
+Version: 1:4.4.27-1
+APT-ID: 102
+Multi-Arch: same
+Source: libxcrypt
+Source-Version: 1:4.4.27-1
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libc6 (>= 2.25)
+Conflicts: libpam0g (<< 1.4.0-10)
+Replaces: libc6 (<< 2.29-4)
+
+Package: vim-runtime
+Architecture: all
+Version: 2:8.2.3995-1ubuntu2.17
+APT-ID: 317
+Multi-Arch: foreign
+Source: vim
+Source-Version: 2:8.2.3995-1ubuntu2.17
+Priority: optional
+Section: editors
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Recommends: vim | vim-gtk3 | vim-athena | vim-nox | vim-tiny
+Breaks: vim-tiny (<< 2:8.2.3995-1ubuntu2.17)
+Enhances: vim-tiny
+
+Package: cpp-11
+Architecture: amd64
+Version: 11.4.0-1ubuntu1~22.04
+APT-ID: 24
+Source: gcc-11
+Source-Version: 11.4.0-1ubuntu1~22.04
+Priority: optional
+Section: interpreters
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: gcc-11-base (= 11.4.0-1ubuntu1~22.04), libc6 (>= 2.34), libgmp10 (>= 2:6.2.1+dfsg), libisl23 (>= 0.15), libmpc3 (>= 1.1.0), libmpfr6 (>= 3.1.3), libzstd1 (>= 1.4.0), zlib1g (>= 1:1.1.4)
+Suggests: gcc-11-locales (>= 11)
+Breaks: hardening-wrapper (<< 2.8+nmu3), libmagics++-dev (<< 2.28.0-4)
+
+Package: binutils-common
+Architecture: amd64
+Version: 2.38-4ubuntu2.6
+APT-ID: 13
+Multi-Arch: same
+Source: binutils
+Source-Version: 2.38-4ubuntu2.6
+Priority: optional
+Section: devel
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Replaces: binutils (<< 2.29.1-3.1~)
+Breaks: binutils (<< 2.29.1-3.1~)
+
+Package: ca-certificates
+Architecture: all
+Version: 20230311ubuntu0.22.04.1
+APT-ID: 19
+Multi-Arch: foreign
+Source: ca-certificates
+Source-Version: 20230311ubuntu0.22.04.1
+Priority: standard
+Section: misc
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: openssl (>= 1.1.1), debconf (>= 0.5) | debconf-2.0
+Breaks: ca-certificates-java (<< 20121112+nmu1)
+Enhances: openssl
+
+Package: libgcrypt20-dev
+Architecture: amd64
+Version: 1.9.4-3ubuntu3
+APT-ID: 126
+Source: libgcrypt20
+Source-Version: 1.9.4-3ubuntu3
+Priority: optional
+Section: libdevel
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libc6-dev | libc-dev, libgcrypt20 (= 1.9.4-3ubuntu3), libgpg-error-dev
+Suggests: libgcrypt20-doc
+Conflicts: libgcrypt-dev
+Provides: libgcrypt-dev
+
+Package: liberror-perl
+Architecture: all
+Version: 0.17029-1
+APT-ID: 115
+Multi-Arch: foreign
+Source: liberror-perl
+Source-Version: 0.17029-1
+Priority: optional
+Section: perl
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: perl:any
+
+Package: libitm1
+Architecture: amd64
+Version: 12.3.0-1ubuntu1~22.04
+APT-ID: 148
+Multi-Arch: same
+Source: gcc-12
+Source-Version: 12.3.0-1ubuntu1~22.04
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: gcc-12-base (= 12.3.0-1ubuntu1~22.04), libc6 (>= 2.34)
+
+Package: libpam-modules-bin
+Architecture: amd64
+Version: 1.4.0-11ubuntu2.4
+APT-ID: 187
+Multi-Arch: foreign
+Source: pam
+Source-Version: 1.4.0-11ubuntu2.4
+Priority: important
+Section: admin
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libaudit1 (>= 1:2.2.1), libc6 (>= 2.34), libcrypt1 (>= 1:4.3.0), libpam0g (>= 0.99.7.1), libselinux1 (>= 3.1~)
+Replaces: libpam-modules (<< 1.1.3-8)
+
+Package: init-system-helpers
+Architecture: all
+Version: 1.62
+APT-ID: 69
+Essential: yes
+Multi-Arch: foreign
+Source: init-system-helpers
+Source-Version: 1.62
+Priority: important
+Section: admin
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: perl-base (>= 5.20.1-3)
+Conflicts: file-rc (<< 0.8.17~)
+
+Package: liblz4-dev
+Architecture: amd64
+Version: 1.9.3-2build2
+APT-ID: 163
+Multi-Arch: same
+Source: lz4
+Source-Version: 1.9.3-2build2
+Priority: optional
+Section: libdevel
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: liblz4-1 (= 1.9.3-2build2)
+
+Package: libsemanage-common
+Architecture: all
+Version: 3.3-1build2
+APT-ID: 215
+Multi-Arch: foreign
+Source: libsemanage
+Source-Version: 3.3-1build2
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+
+Package: librhash0
+Architecture: amd64
+Version: 1.4.2-1ubuntu1
+APT-ID: 208
+Multi-Arch: same
+Source: rhash
+Source-Version: 1.4.2-1ubuntu1
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: libc6 (>= 2.34)
+Recommends: libssl3
+
+Package: libtasn1-6-dev
+Architecture: amd64
+Version: 4.18.0-4build1
+APT-ID: 231
+Multi-Arch: same
+Source: libtasn1-6
+Source-Version: 4.18.0-4build1
+Priority: optional
+Section: libdevel
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: libtasn1-6 (= 4.18.0-4build1)
+Recommends: libtasn1-doc (= 4.18.0-4build1)
+Conflicts: libtasn1-dev
+Provides: libtasn1-dev
+
+Package: libseccomp2
+Architecture: amd64
+Version: 2.5.3-2ubuntu2
+APT-ID: 213
+Multi-Arch: same
+Source: libseccomp
+Source-Version: 2.5.3-2ubuntu2
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libc6 (>= 2.4)
+
+Package: procps
+Architecture: amd64
+Version: 2:3.3.17-6ubuntu2.1
+APT-ID: 290
+Multi-Arch: foreign
+Source: procps
+Source-Version: 2:3.3.17-6ubuntu2.1
+Priority: required
+Section: admin
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libc6 (>= 2.34), libncurses6 (>= 6), libncursesw6 (>= 6), libprocps8 (>= 2:3.3.16-1), libtinfo6 (>= 6), lsb-base (>= 3.0-10), init-system-helpers (>= 1.29~)
+Recommends: psmisc
+Replaces: manpages-de (<< 4.9.1-2), manpages-fr (<< 4.9.1-2), manpages-fr-extra (<< 20151231+nmu1), manpages-pl (<< 1:4.9.1-2)
+Breaks: guymager (<= 0.5.9-1), manpages-de (<< 4.9.1-2), manpages-fr (<< 4.9.1-2), manpages-fr-extra (<< 20151231+nmu1), manpages-pl (<< 1:4.9.1-2), open-vm-tools (<= 2011.12.20-562307-1)
+Provides: watch
+
+Package: libdpkg-perl
+Architecture: all
+Version: 1.21.1ubuntu2.3
+APT-ID: 112
+Multi-Arch: foreign
+Source: dpkg
+Source-Version: 1.21.1ubuntu2.3
+Priority: optional
+Section: perl
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: perl:any, dpkg (>= 1.18.11)
+Suggests: debian-keyring, gnupg, gpgv, gcc | c-compiler, binutils, patch, sensible-utils, git, bzr
+Recommends: libfile-fcntllock-perl, liblocale-gettext-perl, bzip2, xz-utils
+Breaks: dgit (<< 3.13~), pkg-kde-tools (<< 0.15.28~)
+
+Package: libpython3-stdlib
+Architecture: amd64
+Version: 3.10.6-1~22.04
+APT-ID: 202
+Multi-Arch: same
+Source: python3-defaults
+Source-Version: 3.10.6-1~22.04
+Priority: optional
+Section: python
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: libpython3.10-stdlib (>= 3.10.6-1~)
+
+Package: bash-completion
+Architecture: all
+Version: 1:2.11-5ubuntu1
+APT-ID: 11
+Multi-Arch: foreign
+Source: bash-completion
+Source-Version: 1:2.11-5ubuntu1
+Priority: standard
+Section: shells
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Provides: dh-sequence-bash-completion
+
+Package: libc-dev-bin
+Architecture: amd64
+Version: 2.35-0ubuntu3.8
+APT-ID: 90
+Multi-Arch: foreign
+Source: glibc
+Source-Version: 2.35-0ubuntu3.8
+Priority: optional
+Section: libdevel
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: libc6 (>> 2.35), libc6 (<< 2.36)
+Recommends: manpages, manpages-dev, libc-devtools (>> 2.35)
+
+Package: mount
+Architecture: amd64
+Version: 2.37.2-4ubuntu3.4
+APT-ID: 270
+Multi-Arch: foreign
+Source: util-linux
+Source-Version: 2.37.2-4ubuntu3.4
+Priority: important
+Section: admin
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Pre-Depends: libblkid1 (>= 2.17.2), libc6 (>= 2.34), libmount1 (>= 2.37.2), libselinux1 (>= 3.1~), libsmartcols1 (>= 2.33)
+Suggests: nfs-common
+
+Package: libglib2.0-0
+Architecture: amd64
+Version: 2.72.4-0ubuntu2.3
+APT-ID: 129
+Multi-Arch: same
+Source: glib2.0
+Source-Version: 2.72.4-0ubuntu2.3
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: libc6 (>= 2.34), libffi8 (>= 3.4), libmount1 (>= 2.35.2-7~), libpcre3, libselinux1 (>= 3.1~), zlib1g (>= 1:1.2.2)
+Recommends: libglib2.0-data, shared-mime-info, xdg-user-dirs
+Breaks: gimp (<< 2.10.14-3~), glib-networking-tests (<< 2.70.0~), gnome-keyring (<< 40.0-3~), gnome-shell (<< 42.9-0ubuntu2.1~), libgirepository-1.0-1 (<< 1.62.0-4~), libgladeui-2-6 (<< 3.22.2), libsoup2.4-tests (<< 2.72.0-3~)
+
+Package: perl-base
+Architecture: amd64
+Version: 5.34.0-3ubuntu1.3
+APT-ID: 285
+Essential: yes
+Source: perl
+Source-Version: 5.34.0-3ubuntu1.3
+Priority: important
+Section: perl
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Pre-Depends: libc6 (>= 2.35), libcrypt1 (>= 1:4.1.0), dpkg (>= 1.17.17)
+Suggests: perl, sensible-utils
+Conflicts: defoma (<< 0.11.12), doc-base (<< 0.10.3), mono-gac (<< 2.10.8.1-3), safe-rm (<< 0.8), update-inetd (<< 4.41)
+Replaces: libfile-path-perl (<< 2.18), libfile-temp-perl (<< 0.2311), libio-socket-ip-perl (<< 0.41), libscalar-list-utils-perl (<< 1:1.55), libsocket-perl (<< 2.031), libxsloader-perl (<< 0.30), perl (<< 5.10.1-12), perl-modules (<< 5.20.1-3)
+Breaks: amanda-common (<< 1:3.3.9-2), backuppc (<< 3.3.1-2), bucardo (<< 5.5.0-1.1), debconf (<< 1.5.61), dh-haskell (<< 0.3), intltool (<< 0.51.0-4), kio-perldoc (<< 20.04.1-1), latexml (<< 0.8.4-2), libdevel-mat-dumper-perl (<< 0.42-3), libencode-arabic-perl (<< 14.2-2), libexception-class-perl (<< 1.42), libfile-path-perl (<< 2.18), libfile-spec-perl (<< 3.8000), libfile-temp-perl (<< 0.2311), libio-socket-ip-perl (<< 0.41), libmp3-tag-perl (<< 1.13-1.2), libsbuild-perl (<< 0.67.0-1), libscalar-list-utils-perl (<< 1:1.55), libsocket-perl (<< 2.031), libxsloader-perl (<< 0.30), mailagent (<< 1:3.1-81-2), perl (<< 5.34.0~), perl-modules (<< 5.34.0~), pod2pdf (<< 0.42-5.1), slic3r (<< 1.2.9+dfsg-6.1), slic3r-prusa (<< 1.37.0+dfsg-1.1), texinfo (<< 6.1.0.dfsg.1-8)
+Provides: perlapi-5.34.0, libxsloader-perl (= 0.30), libsocket-perl (= 2.031), libscalar-list-utils-perl (= 1:1.55), libio-socket-ip-perl (= 0.41), libfile-temp-perl (= 0.2311), libfile-path-perl (= 2.18)
+
+Package: libpam0g
+Architecture: amd64
+Version: 1.4.0-11ubuntu2.4
+APT-ID: 189
+Multi-Arch: same
+Source: pam
+Source-Version: 1.4.0-11ubuntu2.4
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libaudit1 (>= 1:2.2.1), libc6 (>= 2.34), debconf (>= 0.5) | debconf-2.0
+Suggests: libpam-doc
+Replaces: libpam0g-util
+
+Package: apt-transport-https
+Architecture: all
+Version: 2.4.12
+APT-ID: 6
+Multi-Arch: foreign
+Source: apt
+Source-Version: 2.4.12
+Priority: optional
+Section: oldlibs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: apt (>= 1.5~alpha4)
+
+Package: nano
+Architecture: amd64
+Version: 6.2-1
+APT-ID: 271
+Source: nano
+Source-Version: 6.2-1
+Priority: required
+Section: editors
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libc6 (>= 2.34), libncursesw6 (>= 6), libtinfo6 (>= 6)
+Suggests: hunspell
+Conflicts: pico
+Replaces: nano-tiny (<< 2.8.6-2), pico
+Breaks: nano-tiny (<< 2.8.6-2)
+
+Package: libbrotli1
+Architecture: amd64
+Version: 1.0.9-2build6
+APT-ID: 85
+Multi-Arch: same
+Source: brotli
+Source-Version: 1.0.9-2build6
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: libc6 (>= 2.29)
+
+Package: htop
+Architecture: amd64
+Version: 3.0.5-7build2
+APT-ID: 68
+Source: htop
+Source-Version: 3.0.5-7build2
+Priority: optional
+Section: utils
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libc6 (>= 2.34), libncursesw6 (>= 6), libnl-3-200 (>= 3.2.7), libnl-genl-3-200 (>= 3.2.7), libtinfo6 (>= 6)
+Suggests: lm-sensors, lsof, strace
+
+Package: ncdu
+Architecture: amd64
+Version: 1.15.1-1
+APT-ID: 272
+Source: ncdu
+Source-Version: 1.15.1-1
+Priority: optional
+Section: admin
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libc6 (>= 2.14), libncursesw6 (>= 6), libtinfo6 (>= 6)
+
+Package: libseccomp-dev
+Architecture: amd64
+Version: 2.5.3-2ubuntu2
+APT-ID: 212
+Multi-Arch: same
+Source: libseccomp
+Source-Version: 2.5.3-2ubuntu2
+Priority: optional
+Section: libdevel
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libseccomp2 (= 2.5.3-2ubuntu2)
+Suggests: seccomp
+
+Package: sudo
+Architecture: amd64
+Version: 1.9.9-1ubuntu2.4
+APT-ID: 303
+Source: sudo
+Source-Version: 1.9.9-1ubuntu2.4
+Priority: optional
+Section: admin
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libaudit1 (>= 1:2.2.1), libc6 (>= 2.34), libpam0g (>= 0.99.7.1), libselinux1 (>= 3.1~), zlib1g (>= 1:1.2.0.2), libpam-modules, lsb-base
+Conflicts: sudo-ldap
+Replaces: sudo-ldap
+
+Package: libc-bin
+Architecture: amd64
+Version: 2.35-0ubuntu3.8
+APT-ID: 89
+Essential: yes
+Multi-Arch: foreign
+Source: glibc
+Source-Version: 2.35-0ubuntu3.8
+Priority: important
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libc6 (>> 2.35), libc6 (<< 2.36)
+Suggests: manpages
+
+Package: libosp5
+Architecture: amd64
+Version: 1.5.2-13ubuntu3
+APT-ID: 183
+Source: opensp
+Source-Version: 1.5.2-13ubuntu3
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: libc6 (>= 2.14), libgcc-s1 (>= 3.0), libstdc++6 (>= 5)
+
+Package: cmake-data
+Architecture: all
+Version: 3.22.1-1ubuntu1.22.04.2
+APT-ID: 21
+Multi-Arch: foreign
+Source: cmake
+Source-Version: 3.22.1-1ubuntu1.22.04.2
+Priority: optional
+Section: devel
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: dh-elpa-helper, emacsen-common
+
+Package: libattr1
+Architecture: amd64
+Version: 1:2.5.1-1build1
+APT-ID: 79
+Multi-Arch: same
+Source: attr
+Source-Version: 1:2.5.1-1build1
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libc6 (>= 2.4)
+
+Package: libaudit1
+Architecture: amd64
+Version: 1:3.0.7-1build1
+APT-ID: 81
+Multi-Arch: same
+Source: audit
+Source-Version: 1:3.0.7-1build1
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libaudit-common (>= 1:3.0.7-1build1), libc6 (>= 2.33), libcap-ng0 (>= 0.7.9)
+
+Package: libisl23
+Architecture: amd64
+Version: 0.24-2build1
+APT-ID: 147
+Multi-Arch: same
+Source: isl
+Source-Version: 0.24-2build1
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: libc6 (>= 2.14), libgmp10 (>= 2:6.2.1+dfsg)
+Replaces: libisl-dbg (<< 0.19)
+Breaks: libisl-dbg (<< 0.19)
+
+Package: libc6-dev
+Architecture: amd64
+Version: 2.35-0ubuntu3.8
+APT-ID: 92
+Multi-Arch: same
+Source: glibc
+Source-Version: 2.35-0ubuntu3.8
+Priority: optional
+Section: libdevel
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: libc6 (= 2.35-0ubuntu3.8), libc-dev-bin (= 2.35-0ubuntu3.8), linux-libc-dev, libcrypt-dev, rpcsvc-proto, libtirpc-dev, libnsl-dev
+Suggests: glibc-doc, manpages-dev
+Conflicts: libc0.1-dev, libc0.3-dev, libc6.1-dev
+Breaks: libc6-dev-amd64-cross (<< 2.35~), libgcc-10-dev (<< 10-20200321-1~), libgcc-7-dev (<< 7.5.0-6~), libgcc-8-dev (<< 8.4.0-2~), libgcc-9-dev (<< 9.3.0-5~), libperl5.26 (<< 5.26.1-3), python3.7 (<< 3.7.7-1+b1), python3.8 (<< 3.8.2-1+b1)
+Provides: libc-dev
+
+Package: libhogweed6
+Architecture: amd64
+Version: 3.7.3-1build2
+APT-ID: 143
+Multi-Arch: same
+Source: nettle
+Source-Version: 3.7.3-1build2
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libc6 (>= 2.14), libgmp10 (>= 2:6.2.1+dfsg), libnettle8
+
+Package: dirmngr
+Architecture: amd64
+Version: 2.2.27-3ubuntu2.1
+APT-ID: 32
+Multi-Arch: foreign
+Source: gnupg2
+Source-Version: 2.2.27-3ubuntu2.1
+Priority: optional
+Section: utils
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: adduser, gpgconf (= 2.2.27-3ubuntu2.1), lsb-base (>= 3.2-13), init-system-helpers (>= 1.52), libassuan0 (>= 2.5.0), libc6 (>= 2.34), libgcrypt20 (>= 1.9.0), libgnutls30 (>= 3.7.2), libgpg-error0 (>= 1.42), libksba8 (>= 1.3.5), libldap-2.5-0 (>= 2.5.4), libnpth0 (>= 0.90)
+Suggests: dbus-user-session, libpam-systemd, pinentry-gnome3, tor
+Recommends: gnupg (= 2.2.27-3ubuntu2.1)
+Replaces: gnupg2 (<< 2.1.10-2)
+Breaks: gnupg2 (<< 2.1.10-2)
+Enhances: gpg, gpgsm, squid
+
+Package: libksba8
+Architecture: amd64
+Version: 1.6.0-2ubuntu0.2
+APT-ID: 155
+Multi-Arch: same
+Source: libksba
+Source-Version: 1.6.0-2ubuntu0.2
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: libc6 (>= 2.14), libgpg-error0 (>= 1.14)
+
+Package: jq
+Architecture: amd64
+Version: 1.6-2.1ubuntu3
+APT-ID: 71
+Multi-Arch: foreign
+Source: jq
+Source-Version: 1.6-2.1ubuntu3
+Priority: optional
+Section: utils
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libjq1 (= 1.6-2.1ubuntu3), libc6 (>= 2.34)
+
+Package: libquadmath0
+Architecture: amd64
+Version: 12.3.0-1ubuntu1~22.04
+APT-ID: 206
+Multi-Arch: same
+Source: gcc-12
+Source-Version: 12.3.0-1ubuntu1~22.04
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: gcc-12-base (= 12.3.0-1ubuntu1~22.04), libc6 (>= 2.23)
+
+Package: apt-utils
+Architecture: amd64
+Version: 2.4.12
+APT-ID: 7
+Source: apt
+Source-Version: 2.4.12
+Priority: required
+Section: admin
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: apt (= 2.4.12), libapt-pkg6.0 (>= 2.4.12), libc6 (>= 2.34), libdb5.3, libgcc-s1 (>= 3.3.1), libstdc++6 (>= 11)
+
+Package: unzip
+Architecture: amd64
+Version: 6.0-26ubuntu3.2
+APT-ID: 312
+Multi-Arch: foreign
+Source: unzip
+Source-Version: 6.0-26ubuntu3.2
+Priority: optional
+Section: utils
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libbz2-1.0, libc6 (>= 2.34)
+Suggests: zip
+
+Package: gnupg-utils
+Architecture: amd64
+Version: 2.2.27-3ubuntu2.1
+APT-ID: 54
+Multi-Arch: foreign
+Source: gnupg2
+Source-Version: 2.2.27-3ubuntu2.1
+Priority: optional
+Section: utils
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: libassuan0 (>= 2.5.0), libbz2-1.0, libc6 (>= 2.34), libgcrypt20 (>= 1.9.0), libgpg-error0 (>= 1.42), libksba8 (>= 1.3.5), libreadline8 (>= 6.0), zlib1g (>= 1:1.1.4)
+Recommends: gpg, gpg-agent, gpgconf, gpgsm
+Replaces: gnupg (<< 2.1.21-4), gnupg-agent (<< 2.1.21-4)
+Breaks: gnupg (<< 2.1.21-4), gnupg-agent (<< 2.1.21-4)
+
+Package: opensp
+Architecture: amd64
+Version: 1.5.2-13ubuntu3
+APT-ID: 279
+Source: opensp
+Source-Version: 1.5.2-13ubuntu3
+Priority: optional
+Section: text
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: libc6 (>= 2.14), libgcc-s1 (>= 3.0), libosp5 (>= 1.5.2-1), libstdc++6 (>= 5), sgml-base
+Suggests: doc-base, sgml-data
+
+Package: libexpat1-dev
+Architecture: amd64
+Version: 2.4.7-1ubuntu0.3
+APT-ID: 118
+Multi-Arch: same
+Source: expat
+Source-Version: 2.4.7-1ubuntu0.3
+Priority: optional
+Section: libdevel
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libexpat1 (= 2.4.7-1ubuntu0.3), libc6-dev | libc-dev
+Conflicts: libexpat-dev
+Provides: libexpat-dev
+
+Package: libblkid1
+Architecture: amd64
+Version: 2.37.2-4ubuntu3.4
+APT-ID: 83
+Multi-Arch: same
+Source: util-linux
+Source-Version: 2.37.2-4ubuntu3.4
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libc6 (>= 2.33)
+
+Package: libgnutls30
+Architecture: amd64
+Version: 3.7.3-4ubuntu1.5
+APT-ID: 136
+Multi-Arch: same
+Source: gnutls28
+Source-Version: 3.7.3-4ubuntu1.5
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libc6 (>= 2.34), libgmp10 (>= 2:6.2.1+dfsg), libhogweed6 (>= 3.6), libidn2-0 (>= 2.0.0), libnettle8 (>= 3.7~), libp11-kit0 (>= 0.23.18.1), libtasn1-6 (>= 4.14), libunistring2 (>= 0.9.7)
+Suggests: gnutls-bin
+
+Package: curl
+Architecture: amd64
+Version: 7.81.0-1ubuntu1.17
+APT-ID: 25
+Multi-Arch: foreign
+Source: curl
+Source-Version: 7.81.0-1ubuntu1.17
+Priority: optional
+Section: web
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libc6 (>= 2.34), libcurl4 (= 7.81.0-1ubuntu1.17), zlib1g (>= 1:1.1.4)
+
+Package: libubsan1
+Architecture: amd64
+Version: 12.3.0-1ubuntu1~22.04
+APT-ID: 238
+Multi-Arch: same
+Source: gcc-12
+Source-Version: 12.3.0-1ubuntu1~22.04
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: gcc-12-base (= 12.3.0-1ubuntu1~22.04), libc6 (>= 2.34), libgcc-s1 (>= 3.3), libstdc++6 (>= 4.1.1)
+
+Package: libpcre2-32-0
+Architecture: amd64
+Version: 10.39-3ubuntu0.1
+APT-ID: 191
+Multi-Arch: same
+Source: pcre2
+Source-Version: 10.39-3ubuntu0.1
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: libc6 (>= 2.14)
+
+Package: liblsan0
+Architecture: amd64
+Version: 12.3.0-1ubuntu1~22.04
+APT-ID: 158
+Multi-Arch: same
+Source: gcc-12
+Source-Version: 12.3.0-1ubuntu1~22.04
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: gcc-12-base (= 12.3.0-1ubuntu1~22.04), libc6 (>= 2.34), libgcc-s1 (>= 3.3)
+
+Package: gcc-11-base
+Architecture: amd64
+Version: 11.4.0-1ubuntu1~22.04
+APT-ID: 46
+Multi-Arch: same
+Source: gcc-11
+Source-Version: 11.4.0-1ubuntu1~22.04
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Breaks: gnat (<< 7)
+
+Package: sysvinit-utils
+Architecture: amd64
+Version: 3.01-1ubuntu1
+APT-ID: 304
+Essential: yes
+Multi-Arch: foreign
+Source: sysvinit
+Source-Version: 3.01-1ubuntu1
+Priority: important
+Section: admin
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: lsb-base (>= 11.0.0~), libc6 (>= 2.34)
+
+Package: libcbor0.8
+Architecture: amd64
+Version: 0.8.0-2ubuntu1
+APT-ID: 96
+Multi-Arch: same
+Source: libcbor
+Source-Version: 0.8.0-2ubuntu1
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: libc6 (>= 2.14)
+
+Package: logsave
+Architecture: amd64
+Version: 1.46.5-2ubuntu1.1
+APT-ID: 259
+Multi-Arch: foreign
+Source: e2fsprogs
+Source-Version: 1.46.5-2ubuntu1.1
+Priority: optional
+Section: admin
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libc6 (>= 2.34)
+Replaces: e2fsprogs (<< 1.45.3-1)
+Breaks: e2fsprogs (<< 1.45.3-1)
+
+Package: libgmp-dev
+Architecture: amd64
+Version: 2:6.2.1+dfsg-3ubuntu1
+APT-ID: 130
+Multi-Arch: same
+Source: gmp
+Source-Version: 2:6.2.1+dfsg-3ubuntu1
+Priority: optional
+Section: libdevel
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: libgmp10 (= 2:6.2.1+dfsg-3ubuntu1), libgmpxx4ldbl (= 2:6.2.1+dfsg-3ubuntu1)
+Suggests: gmp-doc, libgmp10-doc, libmpfr-dev
+Conflicts: libgmp10-dev
+Replaces: libgmp10-dev, libgmp3-dev
+Provides: libgmp10-dev
+
+Package: xml-core
+Architecture: all
+Version: 0.18+nmu1
+APT-ID: 321
+Multi-Arch: foreign
+Source: xml-core
+Source-Version: 0.18+nmu1
+Priority: optional
+Section: text
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: sed (>= 4.1.2-8), sgml-base (>= 1.28)
+Suggests: debhelper (>= 9.20120909)
+
+Package: gnupg-l10n
+Architecture: all
+Version: 2.2.27-3ubuntu2.1
+APT-ID: 53
+Multi-Arch: foreign
+Source: gnupg2
+Source-Version: 2.2.27-3ubuntu2.1
+Priority: optional
+Section: localization
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Replaces: gnupg (<< 2.1.14-2~), gnupg2 (<< 2.1.14-2~)
+Breaks: gnupg (<< 2.1.14-2~), gnupg2 (<< 2.1.14-2~)
+Enhances: dirmngr, gpg, gpg-agent
+
+Package: nettle-dev
+Architecture: amd64
+Version: 3.7.3-1build2
+APT-ID: 277
+Multi-Arch: same
+Source: nettle
+Source-Version: 3.7.3-1build2
+Priority: optional
+Section: libdevel
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: libnettle8 (= 3.7.3-1build2), libhogweed6 (= 3.7.3-1build2), libgmp-dev, dpkg (>= 1.15.4) | install-info
+Conflicts: libnettle-dev
+Replaces: libnettle-dev
+
+Package: python3.10-minimal
+Architecture: amd64
+Version: 3.10.12-1~22.04.5
+APT-ID: 295
+Multi-Arch: allowed
+Source: python3.10
+Source-Version: 3.10.12-1~22.04.5
+Priority: optional
+Section: python
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: libpython3.10-minimal (= 3.10.12-1~22.04.5), libexpat1 (>= 2.1~beta3), zlib1g (>= 1:1.2.0)
+Pre-Depends: libc6 (>= 2.35)
+Suggests: binfmt-support
+Recommends: python3.10
+Conflicts: binfmt-support (<< 1.1.2)
+
+Package: gpg-wks-client
+Architecture: amd64
+Version: 2.2.27-3ubuntu2.1
+APT-ID: 59
+Multi-Arch: foreign
+Source: gnupg2
+Source-Version: 2.2.27-3ubuntu2.1
+Priority: optional
+Section: utils
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: dirmngr (= 2.2.27-3ubuntu2.1), gpg (= 2.2.27-3ubuntu2.1), gpg-agent (= 2.2.27-3ubuntu2.1), libassuan0 (>= 2.5.0), libc6 (>= 2.34), libgcrypt20 (>= 1.9.0), libgpg-error0 (>= 1.42)
+Recommends: gnupg (= 2.2.27-3ubuntu2.1)
+
+Package: liblz4-1
+Architecture: amd64
+Version: 1.9.3-2build2
+APT-ID: 162
+Multi-Arch: same
+Source: lz4
+Source-Version: 1.9.3-2build2
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libc6 (>= 2.14)
+Replaces: liblz4-1a
+Breaks: liblz4-1a
+
+Package: libgc1
+Architecture: amd64
+Version: 1:8.0.6-1.1build1
+APT-ID: 122
+Multi-Arch: same
+Source: libgc
+Source-Version: 1:8.0.6-1.1build1
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: libc6 (>= 2.34), libstdc++6 (>= 4.1.1)
+Conflicts: libgc1c2
+Replaces: libgc1c2
+
+Package: perl-modules-5.34
+Architecture: all
+Version: 5.34.0-3ubuntu1.3
+APT-ID: 286
+Multi-Arch: foreign
+Source: perl
+Source-Version: 5.34.0-3ubuntu1.3
+Priority: standard
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: perl-base (>= 5.34.0-1)
+Pre-Depends: dpkg (>= 1.17.17)
+Recommends: perl (>= 5.34.0-1)
+Conflicts: perl-modules (<< 5.22.0~)
+Replaces: libansicolor-perl (<< 5.01), libarchive-tar-perl (<< 2.38), libattribute-handlers-perl (<< 1.01), libautodie-perl (<< 2.34), libcpan-meta-perl (<< 2.150010), libcpan-meta-requirements-perl (<< 2.140), libcpan-meta-yaml-perl (<< 0.018), libdigest-perl (<< 1.19), libexperimental-perl (<< 0.024), libextutils-cbuilder-perl (<< 0.280236), libextutils-command-perl (<< 7.62), libextutils-install-perl (<< 2.20), libextutils-parsexs-perl (<< 3.430000), libfile-spec-perl (<< 3.8000), libhttp-tiny-perl (<< 0.076), libi18n-langtags-perl (<< 0.45), libio-zlib-perl (<< 1.11), libjson-pp-perl (<< 4.06000), liblocale-maketext-perl (<< 1.29), liblocale-maketext-simple-perl (<< 0.21.01), libmath-bigint-perl (<< 1.999818), libmath-complex-perl (<< 1.5902), libmodule-corelist-perl (<< 5.20210520), libmodule-load-conditional-perl (<< 0.74), libmodule-load-perl (<< 0.36), libmodule-metadata-perl (<< 1.000037), libnet-perl (<< 1:3.13), libnet-ping-perl (<< 2.74), libparams-check-perl (<< 0.38), libparent-perl (<< 0.238), libparse-cpan-meta-perl (<< 2.150010), libperl-ostype-perl (<< 1.010), libpod-escapes-perl (<< 1.07), libpod-simple-perl (<< 3.42), libtest-harness-perl (<< 3.43), libtest-simple-perl (<< 1.302183), libtest-tester-perl (<< 1.302183), libtest-use-ok-perl (<< 1.302183), libthread-queue-perl (<< 3.14), libtime-local-perl (<< 1.3000), libunicode-collate-perl (<< 1.29), libversion-perl (<< 1:0.9928), perl-base (<< 5.22.0~), perl-modules, podlators-perl (<< 4.14)
+Breaks: libansicolor-perl (<< 5.01), libarchive-tar-perl (<< 2.38), libattribute-handlers-perl (<< 1.01), libautodie-perl (<< 2.34), libcpan-meta-perl (<< 2.150010), libcpan-meta-requirements-perl (<< 2.140), libcpan-meta-yaml-perl (<< 0.018), libdigest-perl (<< 1.19), libexperimental-perl (<< 0.024), libextutils-cbuilder-perl (<< 0.280236), libextutils-command-perl (<< 7.62), libextutils-install-perl (<< 2.20), libextutils-parsexs-perl (<< 3.430000), libfile-spec-perl (<< 3.8000), libhttp-tiny-perl (<< 0.076), libi18n-langtags-perl (<< 0.45), libio-zlib-perl (<< 1.11), libjson-pp-perl (<< 4.06000), liblocale-maketext-perl (<< 1.29), liblocale-maketext-simple-perl (<< 0.21.01), libmath-bigint-perl (<< 1.999818), libmath-complex-perl (<< 1.5902), libmodule-corelist-perl (<< 5.20210520), libmodule-load-conditional-perl (<< 0.74), libmodule-load-perl (<< 0.36), libmodule-metadata-perl (<< 1.000037), libnet-perl (<< 1:3.13), libnet-ping-perl (<< 2.74), libparams-check-perl (<< 0.38), libparent-perl (<< 0.238), libparse-cpan-meta-perl (<< 2.150010), libperl-ostype-perl (<< 1.010), libpod-escapes-perl (<< 1.07), libpod-simple-perl (<< 3.42), libtest-harness-perl (<< 3.43), libtest-simple-perl (<< 1.302183), libtest-tester-perl (<< 1.302183), libtest-use-ok-perl (<< 1.302183), libthread-queue-perl (<< 3.14), libtime-local-perl (<< 1.3000), libunicode-collate-perl (<< 1.29), libversion-perl (<< 1:0.9928), maildirsync (<< 1.2-2.1), perl (<< 5.34.0~), podlators-perl (<< 4.14)
+Provides: perl-modules
+
+Package: libncursesw6
+Architecture: amd64
+Version: 6.3-2ubuntu0.1
+APT-ID: 173
+Multi-Arch: same
+Source: ncurses
+Source-Version: 6.3-2ubuntu0.1
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libtinfo6 (= 6.3-2ubuntu0.1), libc6 (>= 2.34)
+Recommends: libgpm2
+
+Package: ncurses-bin
+Architecture: amd64
+Version: 6.3-2ubuntu0.1
+APT-ID: 274
+Essential: yes
+Multi-Arch: foreign
+Source: ncurses
+Source-Version: 6.3-2ubuntu0.1
+Priority: important
+Section: utils
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Pre-Depends: libc6 (>= 2.34), libtinfo6 (>= 6.3)
+
+Package: libbz2-1.0
+Architecture: amd64
+Version: 1.0.8-5build1
+APT-ID: 87
+Multi-Arch: same
+Source: bzip2
+Source-Version: 1.0.8-5build1
+Priority: required
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libc6 (>= 2.4)
+
+Package: zlib1g
+Architecture: amd64
+Version: 1:1.2.11.dfsg-2ubuntu9.2
+APT-ID: 326
+Multi-Arch: same
+Source: zlib
+Source-Version: 1:1.2.11.dfsg-2ubuntu9.2
+Priority: important
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libc6 (>= 2.14)
+Conflicts: zlib1 (<= 1:1.0.4-7)
+Breaks: libxml2 (<< 2.7.6.dfsg-2), texlive-binaries (<< 2009-12)
+Provides: libz1
+
+Package: libjq1
+Architecture: amd64
+Version: 1.6-2.1ubuntu3
+APT-ID: 149
+Multi-Arch: same
+Source: jq
+Source-Version: 1.6-2.1ubuntu3
+Priority: optional
+Section: utils
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: libc6 (>= 2.35), libonig5 (>= 6.8.1)
+
+Package: gcc-12-base
+Architecture: amd64
+Version: 12.3.0-1ubuntu1~22.04
+APT-ID: 47
+Multi-Arch: same
+Source: gcc-12
+Source-Version: 12.3.0-1ubuntu1~22.04
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Breaks: gnat (<< 7)
+
+Package: a
+Architecture: all
+Version: 2.0-1
+APT-ID: 1
+Source: a
+Source-Version: 2.0-1
+Priority: optional
+Section: base
+APT-Release:
+ c=
+APT-Pin: 500
+APT-Candidate: yes
+Depends: b (= 2.0-1)
+
+Package: a
+Architecture: all
+Version: 1.0-1
+APT-ID: 0
+Source: a
+Source-Version: 1.0-1
+Priority: optional
+Section: base
+APT-Release:
+ c=
+APT-Pin: 500
+Depends: b (= 1.0-1)
+
+Package: b
+Architecture: all
+Version: 2.0-1
+APT-ID: 3
+Source: b
+Source-Version: 2.0-1
+Priority: optional
+Section: base
+APT-Release:
+ c=
+APT-Pin: 500
+
+Package: b
+Architecture: all
+Version: 1.0-1
+APT-ID: 2
+Source: b
+Source-Version: 1.0-1
+Priority: optional
+Section: base
+APT-Release:
+ c=
+APT-Pin: 500
+APT-Candidate: yes
+
+Package: libelf1
+Architecture: amd64
+Version: 0.186-1build1
+APT-ID: 114
+Multi-Arch: same
+Source: elfutils
+Source-Version: 0.186-1build1
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: libc6 (>= 2.33), zlib1g (>= 1:1.1.4)
+
+Package: groff-base
+Architecture: amd64
+Version: 1.22.4-8build1
+APT-ID: 65
+Multi-Arch: foreign
+Source: groff
+Source-Version: 1.22.4-8build1
+Priority: required
+Section: text
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: libc6 (>= 2.35), libgcc-s1 (>= 4.0), libstdc++6 (>= 4.1.1), libuchardet0 (>= 0.0.1)
+Suggests: groff
+
+Package: liblttng-ust-ctl5
+Architecture: amd64
+Version: 2.13.1-1ubuntu1
+APT-ID: 160
+Multi-Arch: same
+Source: ust
+Source-Version: 2.13.1-1ubuntu1
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: libc6 (>= 2.34), liblttng-ust-common1 (= 2.13.1-1ubuntu1), libnuma1 (>= 2.0.11)
+
+Package: libmd0
+Architecture: amd64
+Version: 1.0.4-1build1
+APT-ID: 166
+Multi-Arch: same
+Source: libmd
+Source-Version: 1.0.4-1build1
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: libc6 (>= 2.33)
+
+Package: git-man
+Architecture: all
+Version: 1:2.34.1-1ubuntu1.11
+APT-ID: 51
+Multi-Arch: foreign
+Source: git
+Source-Version: 1:2.34.1-1ubuntu1.11
+Priority: optional
+Section: doc
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+
+Package: dash
+Architecture: amd64
+Version: 0.5.11+git20210903+057cd650a4ed-3build1
+APT-ID: 26
+Essential: yes
+Multi-Arch: foreign
+Source: dash
+Source-Version: 0.5.11+git20210903+057cd650a4ed-3build1
+Priority: important
+Section: shells
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: debianutils (>= 2.15), dpkg (>= 1.19.1), debconf (>= 0.5) | debconf-2.0
+Pre-Depends: libc6 (>= 2.34)
+
+Package: libtirpc3
+Architecture: amd64
+Version: 1.3.2-2ubuntu0.1
+APT-ID: 236
+Multi-Arch: same
+Source: libtirpc
+Source-Version: 1.3.2-2ubuntu0.1
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libc6 (>= 2.34), libgssapi-krb5-2 (>= 1.17), libtirpc-common (>= 1.3.2-2ubuntu0.1)
+Breaks: nfs-common (<< 1:1.2.8-7), nfs-kernel-server (<< 1:1.2.8-7)
+
+Package: libgnutls-openssl27
+Architecture: amd64
+Version: 3.7.3-4ubuntu1.5
+APT-ID: 134
+Multi-Arch: same
+Source: gnutls28
+Source-Version: 3.7.3-4ubuntu1.5
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: libgnutls30 (= 3.7.3-4ubuntu1.5), libc6 (>= 2.34)
+
+Package: libgpg-error-dev
+Architecture: amd64
+Version: 1.43-3
+APT-ID: 139
+Source: libgpg-error
+Source-Version: 1.43-3
+Priority: optional
+Section: libdevel
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: libgpg-error0 (= 1.43-3)
+
+Package: libpcre2-dev
+Architecture: amd64
+Version: 10.39-3ubuntu0.1
+APT-ID: 193
+Multi-Arch: same
+Source: pcre2
+Source-Version: 10.39-3ubuntu0.1
+Priority: optional
+Section: libdevel
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libc-dev, libpcre2-8-0 (= 10.39-3ubuntu0.1), libpcre2-16-0 (= 10.39-3ubuntu0.1), libpcre2-32-0 (= 10.39-3ubuntu0.1), libpcre2-posix3 (= 10.39-3ubuntu0.1)
+Conflicts: libpcre3-dev (<< 2:8.35-8)
+
+Package: libgnutlsxx28
+Architecture: amd64
+Version: 3.7.3-4ubuntu1.5
+APT-ID: 137
+Multi-Arch: same
+Source: gnutls28
+Source-Version: 3.7.3-4ubuntu1.5
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: libgnutls30 (= 3.7.3-4ubuntu1.5), libc6 (>= 2.4), libgcc-s1 (>= 3.3.1), libstdc++6 (>= 5)
+
+Package: ninja-build
+Architecture: amd64
+Version: 1.10.1-1
+APT-ID: 278
+Multi-Arch: foreign
+Source: ninja-build
+Source-Version: 1.10.1-1
+Priority: optional
+Section: devel
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libc6 (>= 2.15), libstdc++6 (>= 5.2)
+Suggests: python3
+
+Package: liblttng-ust1
+Architecture: amd64
+Version: 2.13.1-1ubuntu1
+APT-ID: 161
+Multi-Arch: same
+Source: ust
+Source-Version: 2.13.1-1ubuntu1
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libc6 (>= 2.34), liblttng-ust-common1 (= 2.13.1-1ubuntu1), libnuma1 (>= 2.0.11), liblttng-ust-ctl5 (= 2.13.1-1ubuntu1)
+
+Package: libedit2
+Architecture: amd64
+Version: 3.1-20210910-1build1
+APT-ID: 113
+Multi-Arch: same
+Source: libedit
+Source-Version: 3.1-20210910-1build1
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: libbsd0 (>= 0.1.3), libc6 (>= 2.33), libtinfo6 (>= 6)
+Replaces: libedit-dev (<< 3.1-20180525-2~)
+
+Package: libicu70
+Architecture: amd64
+Version: 70.1-2
+APT-ID: 144
+Multi-Arch: same
+Source: icu
+Source-Version: 70.1-2
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libc6 (>= 2.34), libgcc-s1 (>= 3.3.1), libstdc++6 (>= 5.2)
+Replaces: libiculx63 (<< 63.1-5)
+Breaks: libiculx63 (<< 63.1-5), openttd (<< 1.8.0-2~)
+
+Package: bsdutils
+Architecture: amd64
+Version: 1:2.37.2-4ubuntu3.4
+APT-ID: 16
+Essential: yes
+Multi-Arch: foreign
+Source: util-linux
+Source-Version: 2.37.2-4ubuntu3.4
+Priority: important
+Section: utils
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Pre-Depends: libc6 (>= 2.34), libsystemd0
+Recommends: bsdextrautils
+
+Package: tree
+Architecture: amd64
+Version: 2.0.2-1
+APT-ID: 308
+Source: tree
+Source-Version: 2.0.2-1
+Priority: optional
+Section: utils
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libc6 (>= 2.34)
+
+Package: liblttng-ust-common1
+Architecture: amd64
+Version: 2.13.1-1ubuntu1
+APT-ID: 159
+Multi-Arch: same
+Source: ust
+Source-Version: 2.13.1-1ubuntu1
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: libc6 (>= 2.34)
+
+Package: iproute2
+Architecture: amd64
+Version: 5.15.0-1ubuntu2
+APT-ID: 70
+Multi-Arch: foreign
+Source: iproute2
+Source-Version: 5.15.0-1ubuntu2
+Priority: required
+Section: net
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: debconf (>= 0.5) | debconf-2.0, libbpf0 (>= 1:0.2), libbsd0 (>= 0.0), libc6 (>= 2.34), libcap2 (>= 1:2.10), libdb5.3, libelf1 (>= 0.131), libmnl0 (>= 1.0.3-4~), libselinux1 (>= 3.1~), libxtables12 (>= 1.6.0+snapshot20161117), libcap2-bin
+Suggests: iproute2-doc
+Recommends: libatm1 (>= 2.4.1-17~)
+Conflicts: arpd, iproute (<< 20130000-1)
+Replaces: iproute
+Provides: arpd
+
+Package: cmake
+Architecture: amd64
+Version: 3.22.1-1ubuntu1.22.04.2
+APT-ID: 20
+Multi-Arch: foreign
+Source: cmake
+Source-Version: 3.22.1-1ubuntu1.22.04.2
+Priority: optional
+Section: devel
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libarchive13 (>= 3.3.3), libc6 (>= 2.34), libcurl4 (>= 7.16.2), libexpat1 (>= 2.0.1), libgcc-s1 (>= 3.3.1), libjsoncpp25 (>= 1.9.5), librhash0 (>= 1.2.6), libstdc++6 (>= 12), libuv1 (>= 1.38.0), zlib1g (>= 1:1.1.4), cmake-data (= 3.22.1-1ubuntu1.22.04.2), procps
+Suggests: cmake-doc, ninja-build, cmake-format
+Recommends: gcc, make
+
+Package: gpgconf
+Architecture: amd64
+Version: 2.2.27-3ubuntu2.1
+APT-ID: 61
+Multi-Arch: foreign
+Source: gnupg2
+Source-Version: 2.2.27-3ubuntu2.1
+Priority: optional
+Section: utils
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: libassuan0 (>= 2.5.0), libc6 (>= 2.34), libgcrypt20 (>= 1.9.0), libgpg-error0 (>= 1.42), libreadline8 (>= 6.0)
+Replaces: gnupg (<< 2.1.21-4), gnupg-agent (<< 2.1.21-4)
+Breaks: gnupg (<< 2.1.21-4), gnupg-agent (<< 2.1.21-4)
+
+Package: libgnutls-dane0
+Architecture: amd64
+Version: 3.7.3-4ubuntu1.5
+APT-ID: 133
+Multi-Arch: same
+Source: gnutls28
+Source-Version: 3.7.3-4ubuntu1.5
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: libgnutls30 (= 3.7.3-4ubuntu1.5), libc6 (>= 2.34), libunbound8 (>= 1.8.0)
+Suggests: dns-root-data
+
+Package: libss2
+Architecture: amd64
+Version: 1.46.5-2ubuntu1.1
+APT-ID: 222
+Multi-Arch: same
+Source: e2fsprogs
+Source-Version: 1.46.5-2ubuntu1.1
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libcom-err2, libc6 (>= 2.34)
+Replaces: e2fsprogs (<< 1.34-1)
+
+Package: libtirpc-dev
+Architecture: amd64
+Version: 1.3.2-2ubuntu0.1
+APT-ID: 235
+Multi-Arch: same
+Source: libtirpc
+Source-Version: 1.3.2-2ubuntu0.1
+Priority: optional
+Section: libdevel
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: libtirpc3 (= 1.3.2-2ubuntu0.1)
+
+Package: libsystemd-dev
+Architecture: amd64
+Version: 249.11-0ubuntu3.12
+APT-ID: 228
+Multi-Arch: same
+Source: systemd
+Source-Version: 249.11-0ubuntu3.12
+Priority: optional
+Section: libdevel
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libsystemd0 (= 249.11-0ubuntu3.12)
+
+Package: libgcc-11-dev
+Architecture: amd64
+Version: 11.4.0-1ubuntu1~22.04
+APT-ID: 123
+Multi-Arch: same
+Source: gcc-11
+Source-Version: 11.4.0-1ubuntu1~22.04
+Priority: optional
+Section: libdevel
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: gcc-11-base (= 11.4.0-1ubuntu1~22.04), libgcc-s1 (>= 11.4.0-1ubuntu1~22.04), libgomp1 (>= 11.4.0-1ubuntu1~22.04), libitm1 (>= 11.4.0-1ubuntu1~22.04), libatomic1 (>= 11.4.0-1ubuntu1~22.04), libasan6 (>= 11.4.0-1ubuntu1~22.04), liblsan0 (>= 11.4.0-1ubuntu1~22.04), libtsan0 (>= 11.4.0-1ubuntu1~22.04), libubsan1 (>= 11.4.0-1ubuntu1~22.04), libquadmath0 (>= 11.4.0-1ubuntu1~22.04)
+Recommends: libc6-dev (>= 2.13-0ubuntu6)
+Replaces: libtsan0 (<< 11.2.0-11)
+Breaks: libtsan0 (<< 11.2.0-11)
+
+Package: libgdbm6
+Architecture: amd64
+Version: 1.23-1
+APT-ID: 128
+Multi-Arch: same
+Source: gdbm
+Source-Version: 1.23-1
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: libc6 (>= 2.33)
+Suggests: gdbm-l10n (= 1.23-1)
+
+Package: libstdc++-11-dev
+Architecture: amd64
+Version: 11.4.0-1ubuntu1~22.04
+APT-ID: 226
+Multi-Arch: same
+Source: gcc-11
+Source-Version: 11.4.0-1ubuntu1~22.04
+Priority: optional
+Section: libdevel
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: gcc-11-base (= 11.4.0-1ubuntu1~22.04), libgcc-11-dev (= 11.4.0-1ubuntu1~22.04), libstdc++6 (>= 11.4.0-1ubuntu1~22.04), libc6-dev (>= 2.13-0ubuntu6)
+Suggests: libstdc++-11-doc
+Provides: libstdc++-dev
+
+Package: binutils
+Architecture: amd64
+Version: 2.38-4ubuntu2.6
+APT-ID: 12
+Source: binutils
+Source-Version: 2.38-4ubuntu2.6
+Priority: optional
+Section: devel
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: binutils-common (= 2.38-4ubuntu2.6), libbinutils (= 2.38-4ubuntu2.6), binutils-x86-64-linux-gnu (= 2.38-4ubuntu2.6)
+Suggests: binutils-doc (>= 2.38-4ubuntu2.6)
+Conflicts: binutils-mingw-w64-i686 (<< 2.23.52.20130612-1+3), binutils-mingw-w64-x86-64 (<< 2.23.52.20130612-1+3), binutils-multiarch (<< 2.27-8), modutils (<< 2.4.19-1)
+Provides: elf-binutils, binutils-gold
+
+Package: libuv1
+Architecture: amd64
+Version: 1.43.0-1ubuntu0.1
+APT-ID: 246
+Multi-Arch: same
+Source: libuv1
+Source-Version: 1.43.0-1ubuntu0.1
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: libc6 (>= 2.34)
+
+Package: libpsl5
+Architecture: amd64
+Version: 0.21.0-1.2build2
+APT-ID: 201
+Multi-Arch: same
+Source: libpsl
+Source-Version: 0.21.0-1.2build2
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: libidn2-0 (>= 0.16), libc6 (>= 2.33), libunistring2 (>= 0.9.7)
+Recommends: publicsuffix (>= 20150507)
+
+Package: googletest
+Architecture: all
+Version: 1.11.0-3
+APT-ID: 56
+Multi-Arch: foreign
+Source: googletest
+Source-Version: 1.11.0-3
+Priority: optional
+Section: libdevel
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Conflicts: google-mock (<< 1.8.0), libgtest-dev (<< 1.8.0)
+Replaces: google-mock (<< 1.8.0), libgtest-dev (<< 1.8.0)
+
+Package: bsdextrautils
+Architecture: amd64
+Version: 2.37.2-4ubuntu3.4
+APT-ID: 15
+Multi-Arch: foreign
+Source: util-linux
+Source-Version: 2.37.2-4ubuntu3.4
+Priority: optional
+Section: utils
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: libc6 (>= 2.34), libsmartcols1 (>= 2.31.1), libtinfo6 (>= 6)
+Replaces: bsdmainutils (<< 12.1.3)
+Breaks: bsdmainutils (<< 12.1.3)
+
+Package: libstdc++6
+Architecture: amd64
+Version: 12.3.0-1ubuntu1~22.04
+APT-ID: 227
+Multi-Arch: same
+Source: gcc-12
+Source-Version: 12.3.0-1ubuntu1~22.04
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: gcc-12-base (= 12.3.0-1ubuntu1~22.04), libc6 (>= 2.34), libgcc-s1 (>= 4.2)
+Conflicts: scim (<< 1.4.2-1)
+Replaces: libstdc++6-12-dbg (<< 4.9.0-3)
+Breaks: gcc-4.3 (<< 4.3.6-1), gcc-4.4 (<< 4.4.6-4), gcc-4.5 (<< 4.5.3-2)
+
+Package: libatomic1
+Architecture: amd64
+Version: 12.3.0-1ubuntu1~22.04
+APT-ID: 78
+Multi-Arch: same
+Source: gcc-12
+Source-Version: 12.3.0-1ubuntu1~22.04
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: gcc-12-base (= 12.3.0-1ubuntu1~22.04), libc6 (>= 2.14)
+
+Package: libncurses6
+Architecture: amd64
+Version: 6.3-2ubuntu0.1
+APT-ID: 172
+Multi-Arch: same
+Source: ncurses
+Source-Version: 6.3-2ubuntu0.1
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libtinfo6 (= 6.3-2ubuntu0.1), libc6 (>= 2.34)
+Recommends: libgpm2
+Breaks: cowdancer (<< 0.89~)
+
+Package: libdebconfclient0
+Architecture: amd64
+Version: 0.261ubuntu1
+APT-ID: 111
+Multi-Arch: same
+Source: cdebconf
+Source-Version: 0.261ubuntu1
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libc6 (>= 2.4)
+
+Package: openssl
+Architecture: amd64
+Version: 3.0.2-0ubuntu1.17
+APT-ID: 281
+Multi-Arch: foreign
+Source: openssl
+Source-Version: 3.0.2-0ubuntu1.17
+Priority: optional
+Section: utils
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: libc6 (>= 2.34), libssl3 (>= 3.0.2-0ubuntu1.2)
+Suggests: ca-certificates
+
+Package: e2fsprogs
+Architecture: amd64
+Version: 1.46.5-2ubuntu1.1
+APT-ID: 38
+Multi-Arch: foreign
+Source: e2fsprogs
+Source-Version: 1.46.5-2ubuntu1.1
+Priority: important
+Section: admin
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: logsave
+Pre-Depends: libblkid1 (>= 2.36), libc6 (>= 2.34), libcom-err2 (>= 1.43.9), libext2fs2 (= 1.46.5-2ubuntu1.1), libss2 (>= 1.38), libuuid1 (>= 2.16)
+Suggests: gpart, parted, fuse2fs, e2fsck-static
+Recommends: e2fsprogs-l10n
+
+Package: libyaml-tiny-perl
+Architecture: all
+Version: 1.73-1
+APT-ID: 253
+Source: libyaml-tiny-perl
+Source-Version: 1.73-1
+Priority: optional
+Section: perl
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Depends: perl
+
+Package: passwd
+Architecture: amd64
+Version: 1:4.8.1-2ubuntu2.2
+APT-ID: 282
+Multi-Arch: foreign
+Source: shadow
+Source-Version: 1:4.8.1-2ubuntu2.2
+Priority: important
+Section: admin
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: libaudit1 (>= 1:2.2.1), libc6 (>= 2.34), libcrypt1 (>= 1:4.1.0), libpam0g (>= 0.99.7.1), libselinux1 (>= 3.1~), libsemanage2 (>= 2.0.3), libpam-modules
+Recommends: sensible-utils
+
+Package: linux-libc-dev
+Architecture: amd64
+Version: 5.15.0-118.128
+APT-ID: 256
+Multi-Arch: same
+Source: linux
+Source-Version: 5.15.0-118.128
+Priority: optional
+Section: devel
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+APT-Automatic: yes
+Conflicts: linux-kernel-headers
+Replaces: linux-kernel-headers
+Provides: linux-kernel-headers, aufs-dev
+
+Package: libgcc-s1
+Architecture: amd64
+Version: 12.3.0-1ubuntu1~22.04
+APT-ID: 124
+Multi-Arch: same
+Source: gcc-12
+Source-Version: 12.3.0-1ubuntu1~22.04
+Priority: optional
+Section: libs
+Installed: yes
+APT-Pin: 100
+APT-Candidate: yes
+Depends: gcc-12-base (= 12.3.0-1ubuntu1~22.04), libc6 (>= 2.35)
+Replaces: libgcc1 (<< 1:10)
+Provides: libgcc1 (= 1:12.3.0-1ubuntu1~22.04)
+

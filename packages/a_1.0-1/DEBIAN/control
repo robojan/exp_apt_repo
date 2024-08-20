@@ -1,0 +1,10 @@
+Package: a
+Version: 1.0-1
+Section: base
+Priority: optional
+Architecture: all
+Maintainer: Test <test@example.com>
+Depends: b (=1.0-1)
+Description: A
+  Pkg A
+

@@ -1,0 +1,58 @@
+Package: a
+Version: 1.0-1
+Architecture: all
+Maintainer: Test <test@example.com>
+Depends: b (=1.0-1)
+Filename: ./a_1.0-1.deb
+Size: 508
+MD5sum: 82bb1908f5e8e8518dda53513dfaf1d5
+SHA1: 96bdab5258fa255b787d84956699873548f775d4
+SHA256: 924c325203f1b8aa5b56251e2d148f76a6178ba5d3cc251cfe4a9e77e234e704
+Section: base
+Priority: optional
+Description: A
+  Pkg A
+
+Package: a
+Version: 2.0-1
+Architecture: all
+Maintainer: Test <test@example.com>
+Depends: b (=2.0-1)
+Filename: ./a_2.0-1.deb
+Size: 508
+MD5sum: 1017e7c89032fe55f8fe3493a6e56172
+SHA1: 8d66d68ecc0ca03d3da97a0ad863597582cb8471
+SHA256: 453c5ca316c7eb7cdd7cc4fcfe02f9e6f7dd6fa9d0f63ac190669c33db725fe6
+Section: base
+Priority: optional
+Description: A
+  Pkg A
+
+Package: b
+Version: 1.0-1
+Architecture: all
+Maintainer: Test <test@example.com>
+Filename: ./b_1.0-1.deb
+Size: 492
+MD5sum: 6fbd2f211bb2c38673b284381e502a81
+SHA1: 8360fdc3ff2cdb7d8108f8f33c1103a5fc1f2434
+SHA256: 3b25772203534b996e9b17a2ad6d488d69ce80b51e033a1610814188248bee47
+Section: base
+Priority: optional
+Description: B
+  Pkg B
+
+Package: b
+Version: 2.0-1
+Architecture: all
+Maintainer: Test <test@example.com>
+Filename: ./b_2.0-1.deb
+Size: 492
+MD5sum: c855ee47d8058410bdb7e2f62cf42062
+SHA1: f138cdf1fcfc34cee2a2df799caad702c205a7c7
+SHA256: 0bd1d078b40ca414a00448d0365b9dd930550aaae626f59435b250a7a9fcf6a8
+Section: base
+Priority: optional
+Description: B
+  Pkg B
+
